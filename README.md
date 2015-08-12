@@ -1,2 +1,0 @@
-# goumlab
-blog
