@@ -43,7 +43,7 @@
 </footer><!-- /.post-info -->      <p>Okay. So given the substantial chunk of free time that precedes graduate school, what are you going to do with it? I thought one cool thing would be to learn some numerical methods for physics calculations. I've worked in computational physics, but mostly in C++. This can be a bit of a pain, in that the code can make the mathematics opaque, particularly when the math methods are new.</p>
 <p>Python fixes this problem. At first glance, it's practically a scripting language. It's interpreted, so you don't need to compile your programs before running them. It also has dynamic typing, which means one less thing to worry about vs. C++. The libraries (notably <code>numpy</code>, <code>scipy</code>, and <code>matplotlib</code>) are well-developed and incredibly easy to work with.</p>
 <p>So I decided to work through a class I found on the world wide web: <a href="http://www.markwilde.com/teaching/2015-spring-phys7411/">Mark Wilde's Phys7411</a>. The class uses <a href="http://www-personal.umich.edu/~mejn/cp/chapters.html">Mark Newman's textbook</a>, which is quite good. I wound up buying the book when I was about 3/4 done with the course, since only the beginning five or six chapters are free online.</p>
-<p>I wrote up some notes and my homeworks, and they're at the bottom of this post.</p>
+<p>I wrote up some notes and my homeworks, linked at the bottom of this post.</p>
 <h1>Approach</h1>
 <p>My method for working the material was roughly as follows:</p>
 <ul>
@@ -67,8 +67,13 @@
 <p>I think it’s really telling that I could have gotten through my undergrad without having ever seen something like the trapezoidal rule (it was only through external research that I didn't). Maybe it was implicit in calculus, and so I saw it and ‘internalized’ it a long time ago. But why did I never build on it? Why did no one ever mention you could actually <em>do it</em> on a computer? And that you should <em>want to</em>? Well, this is about fixing that.</p>
 <p>Finally, on ‘approaching and solving physics problems with computers’: that’s obviously a high bar. I did solve some toy problems. And I think the methods I’ve seen will continue to be useful: time-propagating differential equations (e.g., with Runge-Kutta) is immensely useful, as is being able to numerically evaluate integrals. Spending some time on Fourier transforms was also important. Also, I basically wrote a computational solver to the time-independent Schrodinger equation, for arbitrary potentials. That’s something you could never get close to, analytically. Being able to manipulate arrays of data (e.g., Fourier transforms, iterating operations, plotting) is also immensely practical. </p>
 <p>Basically, there needs to be a balance between the field-specific knowledge and the computation knowledge (hence, this blog's structure). I think there’s a Python rabbit hole that I’m only just beginning to jump down, but the analytical methods I know are far from useless. In fact, they’re essential to be able to do any kind of independent scientific computation. And that kind of computation is the right kind of challenge: it says ‘you should value being able to explain things to computers, because they’ll help you understand more material, at greater depth, and with greater efficiency’.</p>
-<p><a href="http://goumlab.com/2015/compPhysPython.pdf">Lecture notes</a></p>
-<p>And here is photo:
+<p><a href="http://goumlab.com/2015/compPhysPython.pdf">Lecture notes</a>
+Homework solutions (about 80% done)
+<a href="http://goumlab.com/2015/hw1soln.pdf">HW1</a>
+<a href="http://goumlab.com/2015/hw2soln.pdf">HW2</a>
+<a href="http://goumlab.com/2015/hw3soln.pdf">HW3</a>
+<a href="http://goumlab.com/2015/hw4soln.pdf">WH4</a></p>
+<p>And here's a nice photo from HW3:
 <img alt="Photo Name" src="http://goumlab.com/2015/hw3crop.png" /></p>
     </div><!-- /.entry-content -->
 
