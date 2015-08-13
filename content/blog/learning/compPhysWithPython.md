@@ -45,11 +45,18 @@ Finally, on ‘approaching and solving physics problems with computers’: that�
 Basically, there needs to be a balance between the field-specific knowledge and the computation knowledge (hence, this blog's structure). I think there’s a Python rabbit hole that I’m only just beginning to jump down, but the analytical methods I know are far from useless. In fact, they’re essential to be able to do any kind of independent scientific computation. And that kind of computation is the right kind of challenge: it says ‘you should value being able to explain things to computers, because they’ll help you understand more material, at greater depth, and with greater efficiency’.
 
 [Lecture notes]({attach}/downloads/pdfs/compPhysPython.pdf)
-Homework solutions (about 80% done)
+
+Homework solutions (about 80% done):
+
 [HW1]({attach}/downloads/pdfs/hw1soln.pdf)
+
 [HW2]({attach}/downloads/pdfs/hw2soln.pdf)
+
 [HW3]({attach}/downloads/pdfs/hw3soln.pdf)
+
 [WH4]({attach}/downloads/pdfs/hw4soln.pdf)
 
+
 And here's a nice photo from HW3:
+
 ![Photo Name]({attach}/blog/images/hw3crop.png)
