@@ -7,6 +7,10 @@ SITENAME = u'goumlab'
 SITEURL = 'http://goumlab.com'
 
 PATH = 'content'
+STATIC_PATHS = ['blog', 'downloads']
+ARTICLE_PATHS = ['blog']
+ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
+ARTICLE_URL = '{date:%Y}/{slug}.html'
 
 TIMEZONE = 'US/Eastern'
 
@@ -35,3 +39,4 @@ DEFAULT_PAGINATION = 15
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
