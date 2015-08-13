@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Luke Bouma'
 SITENAME = u'goumlab'
-SITEURL = ''
+SITEURL = 'http://goumlab.com'
 
 PATH = 'content'
 
@@ -31,7 +31,7 @@ SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
 '''
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 15
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

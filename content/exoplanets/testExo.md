@@ -1,6 +1,6 @@
 Title: Talking about exoplanets
 Slug: exoplanet-test
-Date: 2015-08-12
+Date: 2015-08-10
 Tags: exoplanets, python
 Summary: Test post for sectioning
 
