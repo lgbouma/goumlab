@@ -10,7 +10,7 @@ Python fixes this problem. At first glance, it's practically a scripting languag
 
 So I decided to work through a class I found on the world wide web: [Mark Wilde's Phys7411](http://www.markwilde.com/teaching/2015-spring-phys7411/). The class uses [Mark Newman's textbook](http://www-personal.umich.edu/~mejn/cp/chapters.html), which is quite good. I wound up buying the book when I was about 3/4 done with the course, since only the beginning five or six chapters are free online.
 
-I wrote up some notes and my homeworks, and they're at the bottom of this post.
+I wrote up some notes and my homeworks, linked at the bottom of this post.
 
 # Approach
 My method for working the material was roughly as follows:
@@ -45,6 +45,11 @@ Finally, on ‘approaching and solving physics problems with computers’: that�
 Basically, there needs to be a balance between the field-specific knowledge and the computation knowledge (hence, this blog's structure). I think there’s a Python rabbit hole that I’m only just beginning to jump down, but the analytical methods I know are far from useless. In fact, they’re essential to be able to do any kind of independent scientific computation. And that kind of computation is the right kind of challenge: it says ‘you should value being able to explain things to computers, because they’ll help you understand more material, at greater depth, and with greater efficiency’.
 
 [Lecture notes]({attach}/downloads/pdfs/compPhysPython.pdf)
+Homework solutions (about 80% done)
+[HW1]({attach}/downloads/pdfs/hw1soln.pdf)
+[HW2]({attach}/downloads/pdfs/hw2soln.pdf)
+[HW3]({attach}/downloads/pdfs/hw3soln.pdf)
+[WH4]({attach}/downloads/pdfs/hw4soln.pdf)
 
-And here is photo:
+And here's a nice photo from HW3:
 ![Photo Name]({attach}/blog/images/hw3crop.png)
