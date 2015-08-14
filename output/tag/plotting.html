@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>goumlab - plotting</title>
+        <link rel="stylesheet" href="http://goumlab.com/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://goumlab.com/">goumlab </a></h1>
+                <nav><ul>
+                    <li><a href="http://goumlab.com/category/about.html">about</a></li>
+                    <li><a href="http://goumlab.com/category/computation.html">computation</a></li>
+                    <li><a href="http://goumlab.com/category/exoplanets.html">exoplanets</a></li>
+                    <li><a href="http://goumlab.com/category/learning.html">learning</a></li>
+                    <li><a href="http://goumlab.com/category/learning-exoplanets.html">learning, exoplanets</a></li>
+                    <li><a href="http://goumlab.com/category/tests.html">tests</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="http://goumlab.com/2015/classic-matplotlib.html">Plotting a classic in matplotlib</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2015-08-15T21:40:00-04:00">
+                Published: Sat 15 August 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://goumlab.com/author/lgbouma.html">lgbouma</a>
+        </address>
+<p>In <a href="http://goumlab.com/category/learning-exoplanets.html">learning, exoplanets</a>.</p>
+<p>tags: <a href="http://goumlab.com/tag/open-exoplanet-catalog.html">open-exoplanet-catalog</a> <a href="http://goumlab.com/tag/plotting.html">plotting</a> <a href="http://goumlab.com/tag/python.html">python</a> <a href="http://goumlab.com/tag/matplotlib.html">matplotlib</a> </p>
+</footer><!-- /.post-info --><p>A classic plot in exoplanet astronomy looks at the masses of exoplanets against their semi-major axes. I figured I would try playing around with the data available from the <a href="https://github.com/OpenExoplanetCatalogue/open_exoplanet_catalogue/">Open Exoplanet Catalog</a> to see if I could replicate these. This also served as an exercise in <code>matplotlib</code>. The result follows below, where every point represents an exoplanet:</p>
+<p><img alt="Mass_vs_semiMaj" src="http://goumlab.com/2015/mass_vs_semiMajAxis_custom1.png" /></p>
+<p>And splitting up the different planet-finding methods for clarity:</p>
+<p><img alt="Different_techniques" src="http://goumlab.com/2015/mplMassSemiMajDiscTypeSegmented.png" /></p>
+<p>The code for generating these figures is available here ([first figure]{attach}(/downloads/python/fig1.py)) and here ([second figure]{attach}(/downloads/python/fig2.py)). You'll need to also use this <a href="http://goumlab.com/2015/matplotlibrc">matplotlibrc file</a>. I did it all in 2.7, but you should be able to figure it out for 3.X if you're trying it out for yourself.</p>
+<p>I'll analyze these plots in depth in the future, but signing off, I think it's worth remarking on how much work it took an incredibly dedicated community of astronomers to get all this data. The first detections of exoplanets were twenty years ago, and today I can put together a plot like this in a few hours' effort. And these timescales are a drop in the bucket compared to how long the planets themselves have been around. Thanks to the astronomers and OEC group for making this all available!</p>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

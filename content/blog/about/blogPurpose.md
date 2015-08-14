@@ -1,5 +1,6 @@
 Title: About
 Slug: about
+Author: lgbouma
 Date: 2015-08-12
 Tags: physics, computation, python, manifesto
 
