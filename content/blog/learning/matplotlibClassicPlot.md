@@ -13,6 +13,6 @@ And splitting up the different planet-finding methods for clarity:
 
 ![Different_techniques]({attach}/blog/images/mplMassSemiMajDiscTypeSegmented.png)
 
-The code for generating these figures is available here: [first figure]{attach}(/downloads/python/fig1.py) and here: [second figure]{attach}(/downloads/python/fig2.py). You'll need to also use this [matplotlibrc file]({attach}/downloads/python/matplotlibrc). I did it all in 2.7, but you should be able to figure it out for 3.X if you're trying it out for yourself.
+The code for generating these figures is available here: [first figure]({attach}/downloads/python/fig1.py) and here: [second figure]({attach}/downloads/python/fig2.py). You'll need to also use this [matplotlibrc file]({attach}/downloads/python/matplotlibrc). I did it all in 2.7, but you should be able to figure it out for 3.X if you're trying it out for yourself.
 
 I'll analyze these plots in depth in the future, but signing off, I think it's worth remarking on how much work it took the astronomy community to obtain all this data. The first detections of exoplanets were twenty years ago, and today I can put together a plot like this with a few hours effort. And these timescales are a drop in the bucket compared to how long the planets themselves have been around. Thanks to the astronomers and OEC group for making this all available!
