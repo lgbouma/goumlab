@@ -1,7 +1,7 @@
-Title: Computational Physics with Python
+Title: On testing; 'shoot-first, clean-up-later' integration
 Slug: qual-MCint
 Date: 2015-09-04
-Tags: tests, python, monte-carlo
+Tags: quals, python, monte-carlo
 Summary: We talk a bit about tests, and look at a funny numerical integration method.
 
 # Written quals, and the point of exams
@@ -12,18 +12,13 @@ Honestly the whole thing was a bit underwhelming, given how difficult some of th
 
 # Monte-Carlo Integration
 
-I was reading a section of [Mark Newman's textbook](http://www-personal.umich.edu/~mejn/cp/chapters.html) that I hadn't covered in the class previously, and he describes an integration method that's actually pretty hilarious, and is really simple.
+In other news, I was reading a section of [Mark Newman's textbook](http://www-personal.umich.edu/~mejn/cp/chapters.html) that I hadn't covered in the class previously, and he describes an integration method that's actually pretty hilarious, and is really simple.
 
 It called Monte-Carlo integration: you have some bounded function *f(x)* you want to integrate over an interval *I=[a,b]*, but *f* is poorly behaved on the interval. It might even be pathological, for instance oscillating infinitely between say 0 and 1 when near the edges of the interval. All the standard integration techniques -- the trapezoidal rule, Newton's method, Gaussian integration, etc. -- will fail quite badly in these highly oscillatory regions. 
 
-Monte Carlo integration says: the area bounded by *f(x)* on its graph is surely finite. It's just some fraction of the area of the rectangle of area *(b-a)* (where we assume that *f* is taking values between 0 and 1, but any bounded function can be scaled to this). Well, so pick a random number *x* on *I*, and another random number *y* on the domain of *f*. If *f(x)<y*, then we're below the curve. If not, we're above it. Repeat this process many times, keeping track of what fraction of the time we're below the curve, and what fraction we're above it. Since we know the area of the rectangle the whole thing happens in (this method obviously scales for any dimension), the fraction of hits below the curve multiplied by the total area we're allowing our points to range over is precisely our estimate for the integral.
+Monte Carlo integration says: the area bounded by *f(x)* on its graph is surely finite. It's just some fraction of the area of the rectangle of area *(b-a)* (where we assume that *f* is taking values between 0 and 1, but any bounded function can be scaled to this). Well, so pick a random number *x* on *I*, and another random number *y* on the range of *f*. If *f(x)<y*, then we're below the curve. If not, we're above it. Repeat this process many times, keeping track of what fraction of the time we're below the curve, and what fraction we're above it. Since we know the area of the rectangle the whole thing happens in (this method obviously scales for any dimension), the fraction of hits below the curve multiplied by the total area we're allowing our points to range over is precisely our estimate for the integral.
 
-A cute implementation of this for a pathological function is below:
-
-::: python
-	# Idea: have a pathological function (varies infinitely fast near edges).
-	# Throw a bunch of points at the function, randomly.
-	# The ones that land below it contribute to an estimate of the area.
+Here's a cute implementation (taken from Mark Newman's textbook) of this method for a pathological function:
 
 	from math import sin
 	from random import random
@@ -42,4 +37,10 @@ A cute implementation of this for a pathological function is below:
 	I = 2*count/N
 	print(I)
 
-The one issue, as you might expect, is that this method isn't very accurate. It turns out that it scales the inverse square root of the number of points you throw at the function. 
+The one issue, as you might expect, is that this method isn't very accurate. It turns out that it scales in accuracy as the inverse square root of the number of points you throw at the function. But in cases where other standard methods fail, this is pretty nice.
+
+To-do for building the website:
+
+1. Figure out LaTeX compatibility. 
+2. Figure out a better figure embed method.
+3. Add comments!

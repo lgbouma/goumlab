@@ -18,13 +18,12 @@
                     <li><a href="http://goumlab.com/category/computation.html">computation</a></li>
                     <li><a href="http://goumlab.com/category/exoplanets.html">exoplanets</a></li>
                     <li><a href="http://goumlab.com/category/learning.html">learning</a></li>
-                    <li><a href="http://goumlab.com/category/tests.html">tests</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="http://goumlab.com/2015/qual-MCint.html">Computational Physics with Python</a></h1>
+                    <h1 class="entry-title"><a href="http://goumlab.com/2015/qual-MCint.html">On testing; 'shoot-first, clean-up-later' integration</a></h1>
 <footer class="post-info">
         <abbr class="published" title="2015-09-04T00:00:00-04:00">
                 Published: Fri 04 September 2015
@@ -34,19 +33,15 @@
                 By                         <a class="url fn" href="http://goumlab.com/author/lgbouma.html">lgbouma</a>
         </address>
 <p>In <a href="http://goumlab.com/category/learning.html">learning</a>. </p>
-<p>tags: <a href="http://goumlab.com/tag/tests.html">tests</a> <a href="http://goumlab.com/tag/python.html">python</a> <a href="http://goumlab.com/tag/monte-carlo.html">monte-carlo</a> </p>
+<p>tags: <a href="http://goumlab.com/tag/quals.html">quals</a> <a href="http://goumlab.com/tag/python.html">python</a> <a href="http://goumlab.com/tag/monte-carlo.html">monte-carlo</a> </p>
 </footer><!-- /.post-info --><h1>Written quals, and the point of exams</h1>
 <p>So I took a portion of my grad program's qualifying exam this morning. The whole process of "qualifying" to be degree candidate entails taking a written exam (four parts: classical mechanics, statistical mechanics, electromagnetism, and quantum mechanics) and afterwards being grilled by a faculty panel in an oral exam. </p>
 <p>Honestly the whole thing was a bit underwhelming, given how difficult some of the practice problems were. I was talking to a faculty member about the process, and his perspective was essentially: the exam is a tool to get you to study, which you do to learn the material. My opinion is that while it can be worthwhile to have challenging exams to assess the depth of what you actually learned, there's only so much you can expect out of someone in a short time period. "Easy exams" are a basic check on whether or not you have studied. Deep understanding, acknowledged by yourself as well as your peers, is the real test. As long as a candidate approaches an exam precisely as a way of learning the material (in lieu of a hurdle to pass, potentially skimming the material to pass the test), I don't think there's too much lost in providing exams where a large proportion of the test-takers pass. </p>
 <h1>Monte-Carlo Integration</h1>
-<p>I was reading a section of <a href="http://www-personal.umich.edu/~mejn/cp/chapters.html">Mark Newman's textbook</a> that I hadn't covered in the class previously, and he describes an integration method that's actually pretty hilarious, and is really simple.</p>
+<p>In other news, I was reading a section of <a href="http://www-personal.umich.edu/~mejn/cp/chapters.html">Mark Newman's textbook</a> that I hadn't covered in the class previously, and he describes an integration method that's actually pretty hilarious, and is really simple.</p>
 <p>It called Monte-Carlo integration: you have some bounded function <em>f(x)</em> you want to integrate over an interval <em>I=[a,b]</em>, but <em>f</em> is poorly behaved on the interval. It might even be pathological, for instance oscillating infinitely between say 0 and 1 when near the edges of the interval. All the standard integration techniques -- the trapezoidal rule, Newton's method, Gaussian integration, etc. -- will fail quite badly in these highly oscillatory regions. </p>
-<p>Monte Carlo integration says: the area bounded by <em>f(x)</em> on its graph is surely finite. It's just some fraction of the area of the rectangle of area <em>(b-a)</em> (where we assume that <em>f</em> is taking values between 0 and 1, but any bounded function can be scaled to this). Well, so pick a random number <em>x</em> on <em>I</em>, and another random number <em>y</em> on the domain of <em>f</em>. If <em>f(x)&lt;y</em>, then we're below the curve. If not, we're above it. Repeat this process many times, keeping track of what fraction of the time we're below the curve, and what fraction we're above it. Since we know the area of the rectangle the whole thing happens in (this method obviously scales for any dimension), the fraction of hits below the curve multiplied by the total area we're allowing our points to range over is precisely our estimate for the integral.</p>
-<p>A cute implementation of this for a pathological function is below:</p>
-<p>::: python
-    # Idea: have a pathological function (varies infinitely fast near edges).
-    # Throw a bunch of points at the function, randomly.
-    # The ones that land below it contribute to an estimate of the area.</p>
+<p>Monte Carlo integration says: the area bounded by <em>f(x)</em> on its graph is surely finite. It's just some fraction of the area of the rectangle of area <em>(b-a)</em> (where we assume that <em>f</em> is taking values between 0 and 1, but any bounded function can be scaled to this). Well, so pick a random number <em>x</em> on <em>I</em>, and another random number <em>y</em> on the range of <em>f</em>. If <em>f(x)&lt;y</em>, then we're below the curve. If not, we're above it. Repeat this process many times, keeping track of what fraction of the time we're below the curve, and what fraction we're above it. Since we know the area of the rectangle the whole thing happens in (this method obviously scales for any dimension), the fraction of hits below the curve multiplied by the total area we're allowing our points to range over is precisely our estimate for the integral.</p>
+<p>Here's a cute implementation (taken from Mark Newman's textbook) of this method for a pathological function:</p>
 <div class="highlight"><pre><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span>
 <span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">random</span>
 
@@ -66,7 +61,13 @@
 </pre></div>
 
 
-<p>The one issue, as you might expect, is that this method isn't very accurate. It turns out that it scales the inverse square root of the number of points you throw at the function. </p>                </article>
+<p>The one issue, as you might expect, is that this method isn't very accurate. It turns out that it scales in accuracy as the inverse square root of the number of points you throw at the function. But in cases where other standard methods fail, this is pretty nice.</p>
+<p>To-do for building the website:</p>
+<ol>
+<li>Figure out LaTeX compatibility. </li>
+<li>Figure out a better figure embed method.</li>
+<li>Add comments!</li>
+</ol>                </article>
             </aside><!-- /#featured -->
                 <section id="content" class="body">
                     <h1>Other articles</h1>
@@ -141,28 +142,6 @@
 <li>Exoplanets</li>
 <li>Scientific computing (if I have a choice, in Python ...</li></ul>
                 <a class="readmore" href="http://goumlab.com/2015/about.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://goumlab.com/2015/exoplanet-test.html" rel="bookmark"
-                           title="Permalink to Talking about exoplanets">Talking about exoplanets</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-08-10T00:00:00-04:00">
-                Published: Mon 10 August 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://goumlab.com/author/lgbouma.html">lgbouma</a>
-        </address>
-<p>In <a href="http://goumlab.com/category/exoplanets.html">exoplanets</a>. </p>
-<p>tags: <a href="http://goumlab.com/tag/exoplanets.html">exoplanets</a> <a href="http://goumlab.com/tag/python.html">python</a> </p>
-</footer><!-- /.post-info -->                <p>Test post for sectioning</p>
-                <a class="readmore" href="http://goumlab.com/2015/exoplanet-test.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
 
