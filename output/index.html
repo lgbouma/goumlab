@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="http://goumlab.com/theme/css/main.css" />
 
         <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 </head>
 
@@ -24,7 +24,62 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="http://goumlab.com/2015/classic-matplotlib.html">Plotting a classic in matplotlib</a></h1>
+                    <h1 class="entry-title"><a href="http://goumlab.com/2015/qual-MCint.html">Computational Physics with Python</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2015-09-04T00:00:00-04:00">
+                Published: Fri 04 September 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://goumlab.com/author/lgbouma.html">lgbouma</a>
+        </address>
+<p>In <a href="http://goumlab.com/category/learning.html">learning</a>. </p>
+<p>tags: <a href="http://goumlab.com/tag/tests.html">tests</a> <a href="http://goumlab.com/tag/python.html">python</a> <a href="http://goumlab.com/tag/monte-carlo.html">monte-carlo</a> </p>
+</footer><!-- /.post-info --><h1>Written quals, and the point of exams</h1>
+<p>So I took a portion of my grad program's qualifying exam this morning. The whole process of "qualifying" to be degree candidate entails taking a written exam (four parts: classical mechanics, statistical mechanics, electromagnetism, and quantum mechanics) and afterwards being grilled by a faculty panel in an oral exam. </p>
+<p>Honestly the whole thing was a bit underwhelming, given how difficult some of the practice problems were. I was talking to a faculty member about the process, and his perspective was essentially: the exam is a tool to get you to study, which you do to learn the material. My opinion is that while it can be worthwhile to have challenging exams to assess the depth of what you actually learned, there's only so much you can expect out of someone in a short time period. "Easy exams" are a basic check on whether or not you have studied. Deep understanding, acknowledged by yourself as well as your peers, is the real test. As long as a candidate approaches an exam precisely as a way of learning the material (in lieu of a hurdle to pass, potentially skimming the material to pass the test), I don't think there's too much lost in providing exams where a large proportion of the test-takers pass. </p>
+<h1>Monte-Carlo Integration</h1>
+<p>I was reading a section of <a href="http://www-personal.umich.edu/~mejn/cp/chapters.html">Mark Newman's textbook</a> that I hadn't covered in the class previously, and he describes an integration method that's actually pretty hilarious, and is really simple.</p>
+<p>It called Monte-Carlo integration: you have some bounded function <em>f(x)</em> you want to integrate over an interval <em>I=[a,b]</em>, but <em>f</em> is poorly behaved on the interval. It might even be pathological, for instance oscillating infinitely between say 0 and 1 when near the edges of the interval. All the standard integration techniques -- the trapezoidal rule, Newton's method, Gaussian integration, etc. -- will fail quite badly in these highly oscillatory regions. </p>
+<p>Monte Carlo integration says: the area bounded by <em>f(x)</em> on its graph is surely finite. It's just some fraction of the area of the rectangle of area <em>(b-a)</em> (where we assume that <em>f</em> is taking values between 0 and 1, but any bounded function can be scaled to this). Well, so pick a random number <em>x</em> on <em>I</em>, and another random number <em>y</em> on the domain of <em>f</em>. If <em>f(x)&lt;y</em>, then we're below the curve. If not, we're above it. Repeat this process many times, keeping track of what fraction of the time we're below the curve, and what fraction we're above it. Since we know the area of the rectangle the whole thing happens in (this method obviously scales for any dimension), the fraction of hits below the curve multiplied by the total area we're allowing our points to range over is precisely our estimate for the integral.</p>
+<p>A cute implementation of this for a pathological function is below:</p>
+<p>::: python
+    # Idea: have a pathological function (varies infinitely fast near edges).
+    # Throw a bunch of points at the function, randomly.
+    # The ones that land below it contribute to an estimate of the area.</p>
+<div class="highlight"><pre><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">random</span>
+
+<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">sin</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">-</span><span class="n">x</span><span class="p">))))</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="n">N</span> <span class="o">=</span> <span class="mi">10000</span>
+<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">random</span><span class="p">()</span>  <span class="c"># domain is [0, 2)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">random</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">y</span><span class="o">&lt;</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="n">I</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">count</span><span class="o">/</span><span class="n">N</span>
+<span class="k">print</span><span class="p">(</span><span class="n">I</span><span class="p">)</span>
+</pre></div>
+
+
+<p>The one issue, as you might expect, is that this method isn't very accurate. It turns out that it scales the inverse square root of the number of points you throw at the function. </p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="http://goumlab.com/2015/classic-matplotlib.html" rel="bookmark"
+                           title="Permalink to Plotting a classic in matplotlib">Plotting a classic in matplotlib</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2015-08-15T21:40:00-04:00">
                 Published: Sat 15 August 2015
@@ -33,19 +88,12 @@
         <address class="vcard author">
                 By                         <a class="url fn" href="http://goumlab.com/author/lgbouma.html">lgbouma</a>
         </address>
-<p>In <a href="http://goumlab.com/category/exoplanets.html">exoplanets</a>.</p>
+<p>In <a href="http://goumlab.com/category/exoplanets.html">exoplanets</a>. </p>
 <p>tags: <a href="http://goumlab.com/tag/open-exoplanet-catalog.html">open-exoplanet-catalog</a> <a href="http://goumlab.com/tag/plotting.html">plotting</a> <a href="http://goumlab.com/tag/python.html">python</a> <a href="http://goumlab.com/tag/matplotlib.html">matplotlib</a> </p>
-</footer><!-- /.post-info --><p>A classic plot in exoplanet astronomy looks at the masses of exoplanets against their semi-major axes. I figured I would try playing around with the data available from the <a href="https://github.com/OpenExoplanetCatalogue/open_exoplanet_catalogue/">Open Exoplanet Catalog</a> to see if I could replicate these. This also served as an exercise in <code>matplotlib</code>. The result follows below, where every point represents an exoplanet:</p>
-<p><img alt="Mass_vs_semiMaj" src="http://goumlab.com/2015/mass_vs_semiMajAxis_custom1.png" /></p>
-<p>And splitting up the different planet-finding methods for clarity:</p>
-<p><img alt="Different_techniques" src="http://goumlab.com/2015/mplMassSemiMajDiscTypeSegmented.png" /></p>
-<p>The code for generating these figures is available here: <a href="http://goumlab.com/2015/fig1.py">first figure</a> and here: <a href="http://goumlab.com/2015/fig2.py">second figure</a>. You'll need to also use this <a href="http://goumlab.com/2015/matplotlibrc">matplotlibrc file</a>. I did it all in 2.7, but you should be able to figure it out for 3.X if you're trying it out for yourself.</p>
-<p>I'll analyze these plots in depth in the future, but signing off, I think it's worth remarking on how much work it took the astronomy community to obtain all this data. The first detections of exoplanets were twenty years ago, and today I can put together a plot like this with a few hours effort. And these timescales are a drop in the bucket compared to how long the planets themselves have been around. Thanks to the astronomers and OEC group for making this all available!</p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+</footer><!-- /.post-info -->                <p>We make a plot of exoplanet mass vs. semi-major axis for like, 2000 exoplanets!</p>
+                <a class="readmore" href="http://goumlab.com/2015/classic-matplotlib.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
@@ -62,7 +110,7 @@
         <address class="vcard author">
                 By                         <a class="url fn" href="http://goumlab.com/author/lgbouma.html">lgbouma</a>
         </address>
-<p>In <a href="http://goumlab.com/category/learning.html">learning</a>.</p>
+<p>In <a href="http://goumlab.com/category/learning.html">learning</a>. </p>
 <p>tags: <a href="http://goumlab.com/tag/computation.html">computation</a> <a href="http://goumlab.com/tag/python.html">python</a> <a href="http://goumlab.com/tag/physics.html">physics</a> <a href="http://goumlab.com/tag/class.html">class</a> <a href="http://goumlab.com/tag/review.html">review</a> </p>
 </footer><!-- /.post-info -->                <p>We discuss a class we took online, and post transcribed notes and homeworks.</p>
                 <a class="readmore" href="http://goumlab.com/2015/classRev-compPhysPython.html">read more</a>
@@ -84,7 +132,7 @@
         <address class="vcard author">
                 By                         <a class="url fn" href="http://goumlab.com/author/lgbouma.html">lgbouma</a>
         </address>
-<p>In <a href="http://goumlab.com/category/about.html">about</a>.</p>
+<p>In <a href="http://goumlab.com/category/about.html">about</a>. </p>
 <p>tags: <a href="http://goumlab.com/tag/physics.html">physics</a> <a href="http://goumlab.com/tag/computation.html">computation</a> <a href="http://goumlab.com/tag/python.html">python</a> <a href="http://goumlab.com/tag/manifesto.html">manifesto</a> </p>
 </footer><!-- /.post-info -->                <h1>Blog purpose:</h1>
 <p>This blog is a place to keep track of all the wonderful things that I'll be learning in graduate school. I'll be diving into a physics program, and I'm expecting to start working on:</p>
@@ -111,7 +159,7 @@
         <address class="vcard author">
                 By                         <a class="url fn" href="http://goumlab.com/author/luke-bouma.html">Luke Bouma</a>
         </address>
-<p>In <a href="http://goumlab.com/category/tests.html">tests</a>.</p>
+<p>In <a href="http://goumlab.com/category/tests.html">tests</a>. </p>
 <p>tags: <a href="http://goumlab.com/tag/python.html">python</a> <a href="http://goumlab.com/tag/test.html">test</a> <a href="http://goumlab.com/tag/tag.html">tag</a> </p>
 </footer><!-- /.post-info -->                <p>a quick test post</p>
                 <a class="readmore" href="http://goumlab.com/2015/yes-a-title-test.html">read more</a>
@@ -133,7 +181,7 @@
         <address class="vcard author">
                 By                         <a class="url fn" href="http://goumlab.com/author/lgbouma.html">lgbouma</a>
         </address>
-<p>In <a href="http://goumlab.com/category/exoplanets.html">exoplanets</a>.</p>
+<p>In <a href="http://goumlab.com/category/exoplanets.html">exoplanets</a>. </p>
 <p>tags: <a href="http://goumlab.com/tag/exoplanets.html">exoplanets</a> <a href="http://goumlab.com/tag/python.html">python</a> </p>
 </footer><!-- /.post-info -->                <p>Test post for sectioning</p>
                 <a class="readmore" href="http://goumlab.com/2015/exoplanet-test.html">read more</a>
@@ -155,13 +203,16 @@
         <address class="vcard author">
                 By                         <a class="url fn" href="http://goumlab.com/author/lgbouma.html">lgbouma</a>
         </address>
-<p>In <a href="http://goumlab.com/category/computation.html">computation</a>.</p>
+<p>In <a href="http://goumlab.com/category/computation.html">computation</a>. </p>
 <p>tags: <a href="http://goumlab.com/tag/computation.html">computation</a> <a href="http://goumlab.com/tag/python.html">python</a> <a href="http://goumlab.com/tag/yus.html">yus</a> </p>
 </footer><!-- /.post-info -->                <p>yea, computation</p>
                 <a class="readmore" href="http://goumlab.com/2015/url-goes-here.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
                 </ol><!-- /#posts-list -->
+<p class="paginator">
+    Page 1 / 1
+</p>
                 </section><!-- /#content -->
         <section id="extras" class="body">
         </section><!-- /#extras -->
