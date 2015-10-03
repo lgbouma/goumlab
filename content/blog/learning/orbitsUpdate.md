@@ -1,0 +1,70 @@
+Title: Orbits in a logarithmic potential, and an update!
+Slug: orbits-and-update
+Date: 2015-10-03
+Tags: galaxies, dark matter, python
+Summary: Dark matter, stars orbit in galaxies, an update one month into grad school.
+
+# Pictures of galaxies show you like 10% of what's there.
+A pretty surprising observational result in astronomy is the radial velocity distribution
+of galaxies. First things first: for our purposes, there are two major classes of 
+galaxies, (1) spiral (like our own Milky Way), and (2) ellipticals (which unsurprisingly
+are roughly ellipsoids in space). There's another major class called lenticular but let's
+not talk about that.
+
+Anyway, so you look at the light coming from a spiral galaxy in a fancy telescope, and your 
+first thought is 
+probably something like: "it's SPINNING!". How is it spinning? Is the "outside" moving faster
+than the core? Yup. But not how you might expect: if we presume that most of the mass 
+in the galaxy is at its core,
+then we should expect the radial velocity of the galaxy to be 0 at its center, for it
+to increase up to some point, and to eventually fall off as the inverse square-root of the 
+radial distance from the core (I still need LaTeX integration, obviously, but in a Newtonian
+approximation this is just saying that the kinetic energy of some object far away from 
+the galaxy sees the mass of the galaxy as a point gravitational attractor).  
+
+But this isn't what's observed. The behavior near the center is about what we expect,
+but as we go further out, we don't hit the turning point! By measuring the Doppler-shift
+of light coming from stars in these galaxies, we can infer that the radial velocity at
+the outer edges of spiral (and elliptical) galaxies is roughly *constant*.
+
+What's going on? Our *only* assumption was about the mass distribution of the galaxy.
+So that must be wrong. There must be some unseen mass, not in the form of stars. 
+Fixing a hypothetical mass distribution to match the dynamics
+of the galaxies, we find that the mass must be proportional to the radial distance from
+the galaxy center. I.e., going outward, the MASS is going up, but the light is STOPPING.
+It turns out that some of this mass is in the form of gas (mostly hydrogen) that just doesn't
+shine very brightly, but a lot of it is still unaccounted for. 
+So this is an *unsolved problem*. The deficit is called `dark matter'. 
+ 
+# Orbits and the Logarithmic Potential
+Okay, so past some characteristic length both spiral and elliptical galaxies
+have constant rotation velocity. What path do stars take as these spin around in them?  
+
+I really need LaTeX integration here, because it's two easy equations:
+centripetal acceleration in terms of potential, and solution for constant velocity.
+
+As part of my homework for a class, I looked at the path a single star travels, over
+billions of years, in a galaxy. These paths are plotted in grey lines below. I set up
+the markers to tick about 50 times per radial orbit. The images shown are for 50, 100, 200,
+300, ..., 1000 orbits. 
+
+![50]({attach}/blog/images/main50.png)  
+![100]({attach}/blog/images/main100.png)  
+![200]({attach}/blog/images/main200.png)  
+![300]({attach}/blog/images/main300.png)  
+![400]({attach}/blog/images/main400.png)  
+![500]({attach}/blog/images/main500.png)  
+![600]({attach}/blog/images/main600.png)  
+![700]({attach}/blog/images/main700.png)  
+![800]({attach}/blog/images/main800.png)  
+![900]({attach}/blog/images/main900.png)  
+![1000]({attach}/blog/images/main1000.png)  
+
+
+To-do for building the website:
+
+1. Figure out LaTeX compatibility, and update this post with equations. 
+2. Figure out a better figure embed method, update this post and old ones to make em nice.
+3. Add comments!
+4. Actually write an update post on grad-school and research related topics.
+5. Write a blog post about Charles Adler's cool OoM book.
