@@ -7,7 +7,9 @@ SITENAME = u'goumlab'
 SITEURL = 'http://goumlab.com'
 
 PATH = 'content'
-STATIC_PATHS = ['blog', 'downloads']
+STATIC_PATHS = ['blog', 
+                'downloads',
+               ]
 ARTICLE_PATHS = ['blog']
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 ARTICLE_URL = '{date:%Y}/{slug}.html'
