@@ -1,45 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="">	
 <head>
-        <meta charset="utf-8" />
-        <title>Computational Physics with Python</title>
-        <link rel="stylesheet" href="http://goumlab.com/theme/css/main.css" />
+	<meta charset="utf-8"/>
+	<title>Computational Physics with Python - goumlab</title>	
+	<meta name="author" content="lgbouma">
+	
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+	<meta name="description" content="We discuss a class we took online, and post transcribed notes and homeworks.">
+
+
+	<link rel="top" href="#" /><link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro' rel='stylesheet' type='text/css'></link>
+	<link rel="stylesheet" href="http://goumlab.com/theme/css/main.css" type="text/css" />
+		
+
 </head>
+	
+<body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="http://goumlab.com/">goumlab </a></h1>
-                <nav><ul>
-                    <li><a href="http://goumlab.com/category/about.html">about</a></li>
-                    <li><a href="http://goumlab.com/category/computation.html">computation</a></li>
-                    <li><a href="http://goumlab.com/category/exoplanets.html">exoplanets</a></li>
-                    <li class="active"><a href="http://goumlab.com/category/learning.html">learning</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-<section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="http://goumlab.com/2015/classRev-compPhysPython.html" rel="bookmark"
-           title="Permalink to Computational Physics with Python">Computational Physics with Python</a></h1>
-    </header>
+    <div class="container">
+	  
+	  <header role="banner">
+	    <div class="feeds">
+	    </div>
+		<a href="http://goumlab.com" class="title">goumlab</a>
+      </header>
+	
+	  <div class="wrapper">
 
-    <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2015-08-13T00:00:00-04:00">
-                Published: Thu 13 August 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://goumlab.com/author/lgbouma.html">lgbouma</a>
-        </address>
-<p>In <a href="http://goumlab.com/category/learning.html">learning</a>.</p>
-<p>tags: <a href="http://goumlab.com/tag/computation.html">computation</a> <a href="http://goumlab.com/tag/python.html">python</a> <a href="http://goumlab.com/tag/physics.html">physics</a> <a href="http://goumlab.com/tag/class.html">class</a> <a href="http://goumlab.com/tag/review.html">review</a> </p>
-</footer><!-- /.post-info -->      <p>Okay. So given the substantial chunk of free time that precedes graduate school, what are you going to do with it? I thought one cool thing would be to learn some numerical methods for physics calculations. I've worked in computational physics, but mostly in C++. This can be a bit of a pain, in that the code can make the mathematics opaque, particularly when the math methods are new.</p>
+		  <div role="main" class="content">
+	<article class="full">
+			
+		<h1>Computational Physics with Python</h1>
+		
+<div class="metadata">
+  <time datetime="2015-08-13T00:00:00-04:00" pubdate>Thu 13 August 2015</time>
+    <address class="vcard author">
+      by <a class="url fn" href="http://goumlab.com/author/lgbouma.html">lgbouma</a>
+    </address>
+  in <a href="http://goumlab.com/category/learning.html">learning</a>
+<p class="tags">tagged <a href="http://goumlab.com/tag/computation.html">computation</a>, <a href="http://goumlab.com/tag/python.html">python</a>, <a href="http://goumlab.com/tag/physics.html">physics</a>, <a href="http://goumlab.com/tag/class.html">class</a>, <a href="http://goumlab.com/tag/review.html">review</a></p></div>		
+		<p>Okay. So given the substantial chunk of free time that precedes graduate school, what are you going to do with it? I thought one cool thing would be to learn some numerical methods for physics calculations. I've worked in computational physics, but mostly in C++. This can be a bit of a pain, in that the code can make the mathematics opaque, particularly when the math methods are new.</p>
 <p>Python fixes this problem. At first glance, it's practically a scripting language. It's interpreted, so you don't need to compile your programs before running them. It also has dynamic typing, which means one less thing to worry about vs. C++. The libraries (notably <code>numpy</code>, <code>scipy</code>, and <code>matplotlib</code>) are well-developed and incredibly easy to work with.</p>
 <p>So I decided to work through a class I found on the world wide web: <a href="http://www.markwilde.com/teaching/2015-spring-phys7411/">Mark Wilde's Phys7411</a>. The class uses <a href="http://www-personal.umich.edu/~mejn/cp/chapters.html">Mark Newman's textbook</a>, which is quite good. I wound up buying the book when I was about 3/4 done with the course, since only the beginning five or six chapters are free online.</p>
 <p>I wrote up some notes and my homeworks, linked at the bottom of this post.</p>
@@ -73,21 +73,45 @@
 <p><a href="http://goumlab.com/2015/hw3soln.pdf">HW3</a></p>
 <p><a href="http://goumlab.com/2015/hw4soln.pdf">WH4</a></p>
 <p>And here's a nice photo from HW3:</p>
-<p><img alt="Photo Name" src="http://goumlab.com/2015/hw3crop.png" /></p>
-    </div><!-- /.entry-content -->
+<p><img alt="Photo Name" src="http://goumlab.com/2015/hw3crop.png" /></p>	
 
-  </article>
-</section>
-        <section id="extras" class="body">
-        </section><!-- /#extras -->
+	</article>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+    <p>
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="" data-lang="en" data-size="large" data-related="">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</p>
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+
+		  </div>	
+		  
+		  <div class="sidebar">
+
+	        <nav>
+	          <h2>Categories</h2>
+	          <ul>
+	              <li ><a href="http://goumlab.com/category/about.html">about</a></li>
+	              <li ><a href="http://goumlab.com/category/computation.html">computation</a></li>
+	              <li ><a href="http://goumlab.com/category/exoplanets.html">exoplanets</a></li>
+	              <li class="active"><a href="http://goumlab.com/category/learning.html">learning</a></li>
+	          </ul>
+	        </nav>
+
+
+
+		  </div>
+
+	  </div>
+
+      <footer>
+		<p role="contentinfo">
+		  © 2013 lgbouma - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/fle/pelican-simplegrey">pelican-simplegrey</a>.
+    	</p>
+
+	  </footer>	
+
+	</div>
+	
 
 </body>
 </html>
