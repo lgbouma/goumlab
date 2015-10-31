@@ -41,4 +41,7 @@ DEFAULT_PAGINATION = 15
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+PLUGIN_PATHS = ['/home/lgbouma/Dropbox/Documents/blog/pelican-plugins']
+PLUGINS = ['render_math']
+
 THEME = "/home/lgbouma/Dropbox/Documents/blog/pelicanThemes/pelican-simplegrey"
