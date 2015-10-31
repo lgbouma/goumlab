@@ -1,84 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="">	
 <head>
-        <meta charset="utf-8" />
-        <title>goumlab - quals</title>
-        <link rel="stylesheet" href="http://goumlab.com/theme/css/main.css" />
+	<meta charset="utf-8"/>
+	<title>quals - goumlab</title>	
+	<meta name="author" content="lgbouma">
+	
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+	<link rel="top" href="#" /><link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro' rel='stylesheet' type='text/css'></link>
+	<link rel="stylesheet" href="http://goumlab.com/theme/css/main.css" type="text/css" />
+		
+
 </head>
+	
+<body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="http://goumlab.com/">goumlab </a></h1>
-                <nav><ul>
-                    <li><a href="http://goumlab.com/category/about.html">about</a></li>
-                    <li><a href="http://goumlab.com/category/computation.html">computation</a></li>
-                    <li><a href="http://goumlab.com/category/exoplanets.html">exoplanets</a></li>
-                    <li><a href="http://goumlab.com/category/learning.html">learning</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+    <div class="container">
+	  
+	  <header role="banner">
+	    <div class="feeds">
+	    </div>
+		<a href="http://goumlab.com" class="title">goumlab</a>
+      </header>
+	
+	  <div class="wrapper">
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="http://goumlab.com/2015/qual-MCint.html">On testing; 'shoot-first, clean-up-later' integration</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2015-09-04T00:00:00-04:00">
-                Published: Fri 04 September 2015
-        </abbr>
+		  <div role="main" class="content">
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://goumlab.com/author/lgbouma.html">lgbouma</a>
-        </address>
-<p>In <a href="http://goumlab.com/category/learning.html">learning</a>.</p>
-<p>tags: <a href="http://goumlab.com/tag/quals.html">quals</a> <a href="http://goumlab.com/tag/python.html">python</a> <a href="http://goumlab.com/tag/monte-carlo.html">monte-carlo</a> </p>
-</footer><!-- /.post-info --><h1>Written quals, and the point of exams</h1>
-<p>So I took a portion of my grad program's qualifying exam this morning. The whole process of "qualifying" to be degree candidate entails taking a written exam (four parts: classical mechanics, statistical mechanics, electromagnetism, and quantum mechanics) and afterwards being grilled by a faculty panel in an oral exam. </p>
-<p>Honestly the whole thing was a bit underwhelming, given how difficult some of the practice problems were. I was talking to a faculty member about the process, and his perspective was essentially: the exam is a tool to get you to study, which you do to learn the material. My opinion is that while it can be worthwhile to have challenging exams to assess the depth of what you actually learned, there's only so much you can expect out of someone in a short time period. "Easy exams" are a basic check on whether or not you have studied. Deep understanding, acknowledged by yourself as well as your peers, is the real test. As long as a candidate approaches an exam precisely as a way of learning the material (in lieu of a hurdle to pass, potentially skimming the material to pass the test), I don't think there's too much lost in providing exams where a large proportion of the test-takers pass. </p>
-<h1>Monte-Carlo Integration</h1>
-<p>In other news, I was reading a section of <a href="http://www-personal.umich.edu/~mejn/cp/chapters.html">Mark Newman's textbook</a> that I hadn't covered in the class previously, and he describes an integration method that's actually pretty hilarious, and is really simple.</p>
-<p>It called Monte-Carlo integration: you have some bounded function <em>f(x)</em> you want to integrate over an interval <em>I=[a,b]</em>, but <em>f</em> is poorly behaved on the interval. It might even be pathological, for instance oscillating infinitely between say 0 and 1 when near the edges of the interval. All the standard integration techniques -- the trapezoidal rule, Newton's method, Gaussian integration, etc. -- will fail quite badly in these highly oscillatory regions. </p>
-<p>Monte Carlo integration says: the area bounded by <em>f(x)</em> on its graph is surely finite. It's just some fraction of the area of the rectangle of area <em>(b-a)</em> (where we assume that <em>f</em> is taking values between 0 and 1, but any bounded function can be scaled to this). Well, so pick a random number <em>x</em> on <em>I</em>, and another random number <em>y</em> on the range of <em>f</em>. If <em>f(x)&lt;y</em>, then we're below the curve. If not, we're above it. Repeat this process many times, keeping track of what fraction of the time we're below the curve, and what fraction we're above it. Since we know the area of the rectangle the whole thing happens in (this method obviously scales for any dimension), the fraction of hits below the curve multiplied by the total area we're allowing our points to range over is precisely our estimate for the integral.</p>
-<p>Here's a cute implementation (taken from Mark Newman's textbook) of this method for a pathological function:</p>
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span>
-<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">random</span>
+<h1>Post tagged: quals</h1>
 
-<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">(</span><span class="n">sin</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">-</span><span class="n">x</span><span class="p">))))</span><span class="o">**</span><span class="mi">2</span>
+<article class="summary">
+<div class="metadata">
+  <time datetime="2015-09-04T00:00:00-04:00" pubdate>Fri 04 September 2015</time>
+    <address class="vcard author">
+      by <a class="url fn" href="http://goumlab.com/author/lgbouma.html">lgbouma</a>
+    </address>
+  in <a href="http://goumlab.com/category/learning.html">learning</a>
+<p class="tags">tagged <a href="http://goumlab.com/tag/quals.html">quals</a>, <a href="http://goumlab.com/tag/python.html">python</a>, <a href="http://goumlab.com/tag/monte-carlo.html">monte-carlo</a></p></div>  <div>
+    <h2>
+      <a href="http://goumlab.com/2015/qual-MCint.html" rel="bookmark" title="Permalink to On testing; 'shoot-first, clean-up-later' integration">On testing; 'shoot-first, clean-up-later' integration</a>
+    </h2>
+    <p><p>We talk a bit about tests, and look at a funny numerical integration method.</p></p>
+  </div>
+</article>
+<div class="pagination">
+    Page 1 / 1
+</div>
 
-<span class="n">N</span> <span class="o">=</span> <span class="mi">10000</span>
-<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">random</span><span class="p">()</span>  <span class="c"># domain is [0, 2)</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="n">random</span><span class="p">()</span>
-    <span class="k">if</span> <span class="n">y</span><span class="o">&lt;</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+		  </div>	
+		  
+		  <div class="sidebar">
 
-<span class="n">I</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">count</span><span class="o">/</span><span class="n">N</span>
-<span class="k">print</span><span class="p">(</span><span class="n">I</span><span class="p">)</span>
-</pre></div>
+	        <nav>
+	          <h2>Categories</h2>
+	          <ul>
+	              <li ><a href="http://goumlab.com/category/about.html">about</a></li>
+	              <li ><a href="http://goumlab.com/category/computation.html">computation</a></li>
+	              <li ><a href="http://goumlab.com/category/exoplanets.html">exoplanets</a></li>
+	              <li ><a href="http://goumlab.com/category/learning.html">learning</a></li>
+	          </ul>
+	        </nav>
 
 
-<p>The one issue, as you might expect, is that this method isn't very accurate. It turns out that it scales in accuracy as the inverse square root of the number of points you throw at the function. But in cases where other standard methods fail, this is pretty nice.</p>
-<p>To-do for building the website:</p>
-<ol>
-<li>Figure out LaTeX compatibility. </li>
-<li>Figure out a better figure embed method.</li>
-<li>Add comments!</li>
-</ol>                </article>
-            </aside><!-- /#featured -->
-        <section id="extras" class="body">
-        </section><!-- /#extras -->
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+		  </div>
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+	  </div>
+
+      <footer>
+		<p role="contentinfo">
+		  © 2013 lgbouma - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/fle/pelican-simplegrey">pelican-simplegrey</a>.
+    	</p>
+
+	  </footer>	
+
+	</div>
+	
 
 </body>
 </html>

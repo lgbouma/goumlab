@@ -1,106 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="">	
 <head>
-        <meta charset="utf-8" />
-        <title>goumlab - galaxies</title>
-        <link rel="stylesheet" href="http://goumlab.com/theme/css/main.css" />
+	<meta charset="utf-8"/>
+	<title>galaxies - goumlab</title>	
+	<meta name="author" content="lgbouma">
+	
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+	<link rel="top" href="#" /><link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro' rel='stylesheet' type='text/css'></link>
+	<link rel="stylesheet" href="http://goumlab.com/theme/css/main.css" type="text/css" />
+		
+
 </head>
+	
+<body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="http://goumlab.com/">goumlab </a></h1>
-                <nav><ul>
-                    <li><a href="http://goumlab.com/category/about.html">about</a></li>
-                    <li><a href="http://goumlab.com/category/computation.html">computation</a></li>
-                    <li><a href="http://goumlab.com/category/exoplanets.html">exoplanets</a></li>
-                    <li><a href="http://goumlab.com/category/learning.html">learning</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+    <div class="container">
+	  
+	  <header role="banner">
+	    <div class="feeds">
+	    </div>
+		<a href="http://goumlab.com" class="title">goumlab</a>
+      </header>
+	
+	  <div class="wrapper">
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="http://goumlab.com/2015/orbits-and-update.html">Orbits in a logarithmic potential, and an update!</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2015-10-03T00:00:00-04:00">
-                Published: Sat 03 October 2015
-        </abbr>
+		  <div role="main" class="content">
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://goumlab.com/author/lgbouma.html">lgbouma</a>
-        </address>
-<p>In <a href="http://goumlab.com/category/learning.html">learning</a>.</p>
-<p>tags: <a href="http://goumlab.com/tag/galaxies.html">galaxies</a> <a href="http://goumlab.com/tag/dark-matter.html">dark matter</a> <a href="http://goumlab.com/tag/python.html">python</a> </p>
-</footer><!-- /.post-info --><h1>Pictures of galaxies show you like 10% of what's there.</h1>
-<p>A pretty surprising observational result in astronomy is the radial velocity distribution
-of galaxies. First things first: for our purposes, there are two major classes of 
-galaxies, (1) spiral (like our own Milky Way), and (2) ellipticals (which unsurprisingly
-are roughly ellipsoids in space). There's another major class called lenticular but let's
-not talk about that.</p>
-<p>Anyway, so you look at the light coming from a spiral galaxy in a fancy telescope, and your 
-first thought is 
-probably something like: "it's SPINNING!". How is it spinning? Is the "outside" moving faster
-than the core? Yup. But not how you might expect: if we presume that most of the mass 
-in the galaxy is at its core,
-then we should expect the radial velocity of the galaxy to be 0 at its center, for it
-to increase up to some point, and to eventually fall off as the inverse square-root of the 
-radial distance from the core (I still need LaTeX integration, obviously, but in a Newtonian
-approximation this is just saying that the kinetic energy of some object far away from 
-the galaxy sees the mass of the galaxy as a point gravitational attractor).  </p>
-<p>But this isn't what's observed. The behavior near the center is about what we expect,
-but as we go further out, we don't hit the turning point! By measuring the Doppler-shift
-of light coming from stars in these galaxies, we can infer that the radial velocity at
-the outer edges of spiral (and elliptical) galaxies is roughly <em>constant</em>.</p>
-<p>What's going on? Our <em>only</em> assumption was about the mass distribution of the galaxy.
-So that must be wrong. There must be some unseen mass, not in the form of stars. 
-Fixing a hypothetical mass distribution to match the dynamics
-of the galaxies, we find that the mass must be proportional to the radial distance from
-the galaxy center. I.e., going outward, the MASS is going up, but the light is STOPPING.
-It turns out that some of this mass is in the form of gas (mostly hydrogen) that just doesn't
-shine very brightly, but a lot of it is still unaccounted for. 
-So this is an <em>unsolved problem</em>. The deficit is called `dark matter'. </p>
-<h1>Orbits and the Logarithmic Potential</h1>
-<p>Okay, so past some characteristic length both spiral and elliptical galaxies
-have constant rotation velocity. What path do stars take as these spin around in them?  </p>
-<p>I really need LaTeX integration here, because it's two easy equations:
-centripetal acceleration in terms of potential, and solution for constant velocity.</p>
-<p>As part of my homework for a class, I looked at the path a single star travels, over
-billions of years, in a galaxy. These paths are plotted in grey lines below. I set up
-the markers to tick about 50 times per radial orbit. The images shown are for 50, 100, 200,
-300, ..., 1000 orbits. </p>
-<p><img alt="50" src="http://goumlab.com/2015/main50.png" /><br />
-<img alt="100" src="http://goumlab.com/2015/main100.png" /><br />
-<img alt="200" src="http://goumlab.com/2015/main200.png" /><br />
-<img alt="300" src="http://goumlab.com/2015/main300.png" /><br />
-<img alt="400" src="http://goumlab.com/2015/main400.png" /><br />
-<img alt="500" src="http://goumlab.com/2015/main500.png" /><br />
-<img alt="600" src="http://goumlab.com/2015/main600.png" /><br />
-<img alt="700" src="http://goumlab.com/2015/main700.png" /><br />
-<img alt="800" src="http://goumlab.com/2015/main800.png" /><br />
-<img alt="900" src="http://goumlab.com/2015/main900.png" /><br />
-<img alt="1000" src="http://goumlab.com/2015/main1000.png" />  </p>
-<p>To-do for building the website:</p>
-<ol>
-<li>Figure out LaTeX compatibility, and update this post with equations. </li>
-<li>Figure out a better figure embed method, update this post and old ones to make em nice.</li>
-<li>Add comments!</li>
-<li>Actually write an update post on grad-school and research related topics.</li>
-<li>Write a blog post about Charles Adler's cool OoM book.</li>
-</ol>                </article>
-            </aside><!-- /#featured -->
-        <section id="extras" class="body">
-        </section><!-- /#extras -->
+<h1>Post tagged: galaxies</h1>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+<article class="summary">
+<div class="metadata">
+  <time datetime="2015-10-03T00:00:00-04:00" pubdate>Sat 03 October 2015</time>
+    <address class="vcard author">
+      by <a class="url fn" href="http://goumlab.com/author/lgbouma.html">lgbouma</a>
+    </address>
+  in <a href="http://goumlab.com/category/learning.html">learning</a>
+<p class="tags">tagged <a href="http://goumlab.com/tag/galaxies.html">galaxies</a>, <a href="http://goumlab.com/tag/dark-matter.html">dark matter</a>, <a href="http://goumlab.com/tag/python.html">python</a></p></div>  <div>
+    <h2>
+      <a href="http://goumlab.com/2015/orbits-and-update.html" rel="bookmark" title="Permalink to Orbits in a logarithmic potential, and an update!">Orbits in a logarithmic potential, and an update!</a>
+    </h2>
+    <p><p>Dark matter, stars orbit in galaxies, an update one month into grad school.</p></p>
+  </div>
+</article>
+<div class="pagination">
+    Page 1 / 1
+</div>
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+		  </div>	
+		  
+		  <div class="sidebar">
+
+	        <nav>
+	          <h2>Categories</h2>
+	          <ul>
+	              <li ><a href="http://goumlab.com/category/about.html">about</a></li>
+	              <li ><a href="http://goumlab.com/category/computation.html">computation</a></li>
+	              <li ><a href="http://goumlab.com/category/exoplanets.html">exoplanets</a></li>
+	              <li ><a href="http://goumlab.com/category/learning.html">learning</a></li>
+	          </ul>
+	        </nav>
+
+
+
+		  </div>
+
+	  </div>
+
+      <footer>
+		<p role="contentinfo">
+		  © 2013 lgbouma - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/fle/pelican-simplegrey">pelican-simplegrey</a>.
+    	</p>
+
+	  </footer>	
+
+	</div>
+	
 
 </body>
 </html>
