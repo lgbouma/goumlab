@@ -10,7 +10,7 @@
 
 
 	<link rel="top" href="#" /><link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro' rel='stylesheet' type='text/css'></link>
-	<link rel="stylesheet" href="http://goumlab.com/theme/css/main.css" type="text/css" />
+	<link rel="stylesheet" href="../theme/css/main.css" type="text/css" />
 		
 
 </head>
@@ -22,7 +22,7 @@
 	  <header role="banner">
 	    <div class="feeds">
 	    </div>
-		<a href="http://goumlab.com" class="title">goumlab</a>
+		<a href=".." class="title">goumlab</a>
       </header>
 	
 	  <div class="wrapper">
@@ -35,66 +35,130 @@
 <div class="metadata">
   <time datetime="2015-10-03T00:00:00-04:00" pubdate>Sat 03 October 2015</time>
     <address class="vcard author">
-      by <a class="url fn" href="http://goumlab.com/author/lgbouma.html">lgbouma</a>
+      by <a class="url fn" href="../author/lgbouma.html">lgbouma</a>
     </address>
-  in <a href="http://goumlab.com/category/learning.html">learning</a>
-<p class="tags">tagged <a href="http://goumlab.com/tag/galaxies.html">galaxies</a>, <a href="http://goumlab.com/tag/dark-matter.html">dark matter</a>, <a href="http://goumlab.com/tag/python.html">python</a></p></div>		
-		<h1>Pictures of galaxies show you like 10% of what's there.</h1>
-<p>A pretty surprising observational result in astronomy is the radial velocity distribution
-of galaxies. First things first: for our purposes, there are two major classes of 
-galaxies, (1) spiral (like our own Milky Way), and (2) ellipticals (which unsurprisingly
-are roughly ellipsoids in space). There's another major class called lenticular but let's
-not talk about that.</p>
-<p>Anyway, so you look at the light coming from a spiral galaxy in a fancy telescope, and your 
-first thought is 
-probably something like: "it's SPINNING!". How is it spinning? Is the "outside" moving faster
-than the core? Yup. But not how you might expect: if we presume that most of the mass 
-in the galaxy is at its core,
-then we should expect the radial velocity of the galaxy to be 0 at its center, for it
-to increase up to some point, and to eventually fall off as the inverse square-root of the 
-radial distance from the core (I still need LaTeX integration, obviously, but in a Newtonian
-approximation this is just saying that the kinetic energy of some object far away from 
-the galaxy sees the mass of the galaxy as a point gravitational attractor).  </p>
-<p>But this isn't what's observed. The behavior near the center is about what we expect,
-but as we go further out, we don't hit the turning point! By measuring the Doppler-shift
-of light coming from stars in these galaxies, we can infer that the radial velocity at
-the outer edges of spiral (and elliptical) galaxies is roughly <em>constant</em>.</p>
-<p>What's going on? Our <em>only</em> assumption was about the mass distribution of the galaxy.
-So that must be wrong. There must be some unseen mass, not in the form of stars. 
-Fixing a hypothetical mass distribution to match the dynamics
-of the galaxies, we find that the mass must be proportional to the radial distance from
-the galaxy center. I.e., going outward, the MASS is going up, but the light is STOPPING.
-It turns out that some of this mass is in the form of gas (mostly hydrogen) that just doesn't
-shine very brightly, but a lot of it is still unaccounted for. 
-So this is an <em>unsolved problem</em>. The deficit is called `dark matter'. </p>
+  in <a href="../category/learning.html">learning</a>
+<p class="tags">tagged <a href="../tag/galaxies.html">galaxies</a>, <a href="../tag/dark-matter.html">dark matter</a>, <a href="../tag/python.html">python</a></p></div>		
+		<h1>Pictures of galaxies show you 10% of what's there (by mass).</h1>
+<p>A pretty surprising observational result in astronomy is the radial
+velocity distribution of galaxies. First things first: for our purposes,
+there are two major classes of galaxies, (1) spiral (like our own Milky
+Way), and (2) ellipticals (which unsurprisingly are roughly ellipsoids in
+space). There are complications but let's not talk about them.</p>
+<p>Anyway, so you look at a spiral galaxy in a fancy telescope, and your first
+gut reaction (after maybe, "wow") is probably something like: "it's
+SPINNING!".</p>
+<p>Is it really? Yes. But not how you might expect. If you just look at the galaxy,
+you might think that most of its mass is where it's brightest - the center.
+Following this logic, if we wanted to guess the velocity of something far
+from the center (like say, our sun from the center of the Milky Way), we
+would write down a Newtonian circular motion equation like
+</p>
+<div class="math">\begin{equation}
+\frac{v^2}{r}\propto \frac{1}{r^2},
+\label{eq:kepler}
+\end{equation}</div>
+<p>
+for <span class="math">\(v\)</span> the velocity of our 'point particle' and <span class="math">\(r\)</span> its distance from the center
+of the galaxy. The symbol <span class="math">\(\propto\)</span> means "proportional to", and Eq.
+<span class="math">\(\ref{eq:kepler}\)</span> is essentially a statement that the (centripetal) acceleration
+of our 'test particle' (the star) is proportional to a force that falls off
+as the inverse square of the particle's distance from the galaxy's center -
+just Newtonian mechanics!</p>
+<p>Rearranging, this means that we would expect the velocity of stars in
+galaxies to fall off as <span class="math">\(r^{-1/2}\)</span>.</p>
+<p>This is not what's observed. It turns out, the behavior near the center is about what we expect for there being a lot of mass there, but as we go further out,
+the velocity of stars with respect to the galactic center <em>barely</em> decreases!</p>
+<p>What's going on? Our <em>only</em> assumption was about the mass distribution of the galaxy. So that must be wrong. There must be some unseen mass, not in the form
+of stars. Fixing a hypothetical mass distribution to match the dynamics
+of the galaxies (stars have constant velocity out to the edge of where we see
+them), we find that the mass must be proportional to the radial distance from
+the galaxy center. In other words, going outward, the MASS is going up, but
+the light we see from stars is disappearing.
+It turns out that some of this mass is in the form of gas (mostly hydrogen) that just doesn't shine very brightly, but a lot of it is still unaccounted for.</p>
+<p>This is an <em>unsolved problem</em>. The deficit is called 'dark matter'.</p>
 <h1>Orbits and the Logarithmic Potential</h1>
 <p>Okay, so past some characteristic length both spiral and elliptical galaxies
 have constant rotation velocity. What path do stars take as these spin around in them?  </p>
-<p>I really need LaTeX integration here, because it's two easy equations:
-centripetal acceleration in terms of potential, and solution for constant velocity.</p>
-<p>As part of my homework for a class, I looked at the path a single star travels, over
-billions of years, in a galaxy. These paths are plotted in grey lines below. I set up
-the markers to tick about 50 times per radial orbit. The images shown are for 50, 100, 200,
-300, ..., 1000 orbits. </p>
-<p><img alt="50" src="http://goumlab.com/2015/main50.png" /><br />
-<img alt="100" src="http://goumlab.com/2015/main100.png" /><br />
-<img alt="200" src="http://goumlab.com/2015/main200.png" /><br />
-<img alt="300" src="http://goumlab.com/2015/main300.png" /><br />
-<img alt="400" src="http://goumlab.com/2015/main400.png" /><br />
-<img alt="500" src="http://goumlab.com/2015/main500.png" /><br />
-<img alt="600" src="http://goumlab.com/2015/main600.png" /><br />
-<img alt="700" src="http://goumlab.com/2015/main700.png" /><br />
-<img alt="800" src="http://goumlab.com/2015/main800.png" /><br />
-<img alt="900" src="http://goumlab.com/2015/main900.png" /><br />
-<img alt="1000" src="http://goumlab.com/2015/main1000.png" />  </p>
+<p>As part of an assignment for a class recently, I looked at the path a single
+star travels, over billions of years, in a galaxy. Some of these figures looked
+pretty cool, so I figured I would share them!
+I set up the markers to tick about 50 times per radial orbit. The images shown
+are for 50, 100, 200, 300, ..., 1000 orbits.</p>
+<p><img alt="50" src="../2015/main50.png" /><br />
+<img alt="100" src="../2015/main100.png" /><br />
+<img alt="200" src="../2015/main200.png" /><br />
+<img alt="300" src="../2015/main300.png" /><br />
+<img alt="400" src="../2015/main400.png" /><br />
+<img alt="500" src="../2015/main500.png" /><br />
+<img alt="600" src="../2015/main600.png" /><br />
+<img alt="700" src="../2015/main700.png" /><br />
+<img alt="800" src="../2015/main800.png" /><br />
+<img alt="900" src="../2015/main900.png" /><br />
+<img alt="1000" src="../2015/main1000.png" />  </p>
 <p>To-do for building the website:</p>
 <ol>
-<li>Figure out LaTeX compatibility, and update this post with equations. </li>
-<li>Figure out a better figure embed method, update this post and old ones to make em nice.</li>
 <li>Add comments!</li>
 <li>Actually write an update post on grad-school and research related topics.</li>
 <li>Write a blog post about Charles Adler's cool OoM book.</li>
-</ol>	
+</ol>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>	
 
 	</article>
 
@@ -111,10 +175,10 @@ the markers to tick about 50 times per radial orbit. The images shown are for 50
 	        <nav>
 	          <h2>Categories</h2>
 	          <ul>
-	              <li ><a href="http://goumlab.com/category/about.html">about</a></li>
-	              <li ><a href="http://goumlab.com/category/computation.html">computation</a></li>
-	              <li ><a href="http://goumlab.com/category/exoplanets.html">exoplanets</a></li>
-	              <li class="active"><a href="http://goumlab.com/category/learning.html">learning</a></li>
+	              <li ><a href="../category/about.html">about</a></li>
+	              <li ><a href="../category/computation.html">computation</a></li>
+	              <li ><a href="../category/exoplanets.html">exoplanets</a></li>
+	              <li class="active"><a href="../category/learning.html">learning</a></li>
 	          </ul>
 	        </nav>
 
