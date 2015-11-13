@@ -9,8 +9,8 @@ A classic plot in exoplanet astronomy looks at the masses of exoplanets against 
 
 ![Mass_vs_semiMaj]({attach}/blog/images/mass_vs_semiMajAxis_custom1.png)
 
-We remark that: (1) wow, that's a lot more planets than anyone could claim
-20 years ago. (2) We can pretty clearly see some of the biases of the different
+We remark that: (1) wow, that's a lot more planets than anyone knew anything about
+20 years ago; (2) we can pretty clearly see some of the biases of the different
 planet finding techniques as they stand. The transit (photometry) method
 is biased towards short-period planets that actually pass in front of their stars
 in a reasonable time. The planets we can currently directly image are much further out, away
@@ -21,7 +21,7 @@ have much greater spread in mass, and can actually probe somewhat lower masses t
 the RV method at greater distances from the host stars.
 
 Also, points for guessing what those "other" planets are (notice the peculiar
-semimajor axis of one of them).
+semimajor axis of one of them, as well as the give-away mass on another).
  
 The code for generating this figure is available [here]({attach}/downloads/python/fig1.py). You'll need to also use this [matplotlibrc file]({attach}/downloads/python/matplotlibrc). I did it all in 2.7, but you should be able to figure it out for 3.X if you're trying it out for yourself.
 

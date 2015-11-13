@@ -52,10 +52,10 @@ Okay, so past some characteristic length both spiral and elliptical galaxies
 have constant rotation velocity. What path do stars take as these spin around in them?  
 
 As part of an assignment for a class recently, I looked at the path a single
-star travels, over billions of years, in a galaxy. Some of these figures looked
-pretty cool, so I figured I would share them!
-I set up the markers to tick about 50 times per radial orbit. The images shown
-are for 50, 100, 200, 300, ..., 1000 orbits.
+star travels, over billions of years, in a simple model of a galaxy (a 'Mestel
+potential'). Some of these figures looked pretty cool, so I figured I would
+share them! I set up the markers to tick about 50 times per radial orbit.
+The images shown are for 50, 100, 200, 300, ..., 1000 orbits.
 
 ![50]({attach}/blog/images/main50.png)  
 ![100]({attach}/blog/images/main100.png)  

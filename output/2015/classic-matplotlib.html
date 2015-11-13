@@ -41,8 +41,8 @@
 <p class="tags">tagged <a href="../tag/open-exoplanet-catalog.html">open-exoplanet-catalog</a>, <a href="../tag/plotting.html">plotting</a>, <a href="../tag/python.html">python</a>, <a href="../tag/matplotlib.html">matplotlib</a></p></div>		
 		<p>A classic plot in exoplanet astronomy looks at the masses of exoplanets against their semi-major axes. I figured I would try playing around with the data available from the <a href="https://github.com/OpenExoplanetCatalogue/open_exoplanet_catalogue/">Open Exoplanet Catalog</a> to see if I could replicate these. This served as an exercise in <code>matplotlib</code>, as well as in learning about the exoplanet field. The result follows below, where every point represents an exoplanet:</p>
 <p><img alt="Mass_vs_semiMaj" src="../2015/mass_vs_semiMajAxis_custom1.png" /></p>
-<p>We remark that: (1) wow, that's a lot more planets than anyone could claim
-20 years ago. (2) We can pretty clearly see some of the biases of the different
+<p>We remark that: (1) wow, that's a lot more planets than anyone knew anything about
+20 years ago; (2) we can pretty clearly see some of the biases of the different
 planet finding techniques as they stand. The transit (photometry) method
 is biased towards short-period planets that actually pass in front of their stars
 in a reasonable time. The planets we can currently directly image are much further out, away
@@ -52,7 +52,7 @@ of the transit and direct imaging methods. Finally, the microlensing planets
 have much greater spread in mass, and can actually probe somewhat lower masses than 
 the RV method at greater distances from the host stars.</p>
 <p>Also, points for guessing what those "other" planets are (notice the peculiar
-semimajor axis of one of them).</p>
+semimajor axis of one of them, as well as the give-away mass on another).</p>
 <p>The code for generating this figure is available <a href="../2015/fig1.py">here</a>. You'll need to also use this <a href="../2015/matplotlibrc">matplotlibrc file</a>. I did it all in 2.7, but you should be able to figure it out for 3.X if you're trying it out for yourself.</p>
 <p>Before signing off, I think it's worth remarking on how much work it took the astronomy community to obtain all this data. The first detections of exoplanets were twenty years ago, and since then the community has confirmed around 2000 planets. Today I can put together a plot like this in an hour or two. These timescales are a drop in the bucket compared to how long the planets themselves have been around, perhaps even unobserved until we looked at them (or perhaps not! Both are interesting prospects). Thanks to the astronomers and OEC group for making this all available!</p>	
 
