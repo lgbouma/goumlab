@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'lgbouma'
 SITENAME = u'goumlab'
-SITEURL = 'http://goumlab.com'
+SITEURL = 'http://lgbouma.com'
 
 PATH = 'content'
 STATIC_PATHS = ['blog', 
@@ -40,7 +40,7 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = 15
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+#RELATIVE_URLS = True
 PLUGIN_PATHS = ['/home/lgbouma/Dropbox/Documents/blog/pelican-plugins']
 PLUGINS = ['render_math']
 
