@@ -1,4 +1,4 @@
-Title: Orbits in a logarithmic potential, and an update!
+Title: Where's the missing mass?
 Slug: orbits-and-update
 Date: 2015-10-03
 Tags: galaxies, dark matter, python
@@ -57,7 +57,6 @@ potential'). Some of these figures looked pretty cool, so I figured I would
 share them! I set up the markers to tick about 50 times per radial orbit.
 The images shown are for 50, 100, 200, 300, ..., 1000 orbits.
 
-![50]({attach}/blog/images/main50.png)  
 ![100]({attach}/blog/images/main100.png)  
 ![200]({attach}/blog/images/main200.png)  
 ![300]({attach}/blog/images/main300.png)  
