@@ -1,24 +1,25 @@
 Title: Where's the missing mass?
-Slug: orbits-and-update
+Slug: missing-mass
 Date: 2015-10-03
 Tags: galaxies, dark matter, python
 Summary: Dark matter, stars orbit in galaxies, an update one month into grad school.
 
 # Pictures of galaxies show you 10% of what's there (by mass).
-A pretty surprising observational result in astronomy is the radial
+A surprising observational result in astronomy is the radial
 velocity distribution of galaxies. First things first: for our purposes,
 there are two major classes of galaxies, (1) spiral (like our own Milky
 Way), and (2) ellipticals (which unsurprisingly are roughly ellipsoids in
 space). There are complications but let's not talk about them.
 
 Anyway, so you look at a spiral galaxy in a fancy telescope, and your first
-gut reaction (after maybe, "wow") is probably something like: "it's
-SPINNING!".
+gut reaction (after maybe, "wow") is probably something like: **"it must be
+SPINNING!".**
 
 Is it really? Yes. But not how you might expect. If you just look at the galaxy,
 you might think that most of its mass is where it's brightest - the center.
+After all, that's where the stars are.
 Following this logic, if we wanted to guess the velocity of something far
-from the center (like say, our sun from the center of the Milky Way), we
+from the center, we
 would write down a Newtonian circular motion equation like
 \begin{equation}
 \frac{v^2}{r}\propto \frac{1}{r^2},
@@ -68,8 +69,14 @@ The images shown are for 50, 100, 200, 300, ..., 1000 orbits.
 ![900]({attach}/blog/images/main900.png)  
 ![1000]({attach}/blog/images/main1000.png)  
 
+In other news (and very exciting news for me), I've joined forces with
+[Josh Winn](http://web.mit.edu/~jwinn/www/) and the TESS team.
+I will be writing about this at some length as we move forward.
+
+Onward!
+
 To-do for building the website:
 
   1. Add comments!
-  2. Actually write an update post on grad-school and research related topics.
+  2. Actually write a proper update post on grad-school and research related topics.
   3. Write a blog post about Charles Adler's cool OoM book.

@@ -17,12 +17,12 @@ in a reasonable time. The planets we can currently directly image are much furth
 from their star's glare, and are quite large. The planets whose Doppler signals
 are easiest to monitor are also at large masses, in between the distance sensitivities
 of the transit and direct imaging methods. Finally, the microlensing planets
-have much greater spread in mass, and can actually probe somewhat lower masses than 
+have much greater spread in mass, and can actually probe somewhat lower masses than
 the RV method at greater distances from the host stars.
 
 Also, points for guessing what those "other" planets are (notice the peculiar
 semimajor axis of one of them, as well as the give-away mass on another).
- 
+
 The code for generating this figure is available [here]({attach}/downloads/python/fig1.py). You'll need to also use this [matplotlibrc file]({attach}/downloads/python/matplotlibrc). I did it all in 2.7, but you should be able to figure it out for 3.X if you're trying it out for yourself.
 
 Before signing off, I think it's worth remarking on how much work it took the astronomy community to obtain all this data. The first detections of exoplanets were twenty years ago, and since then the community has confirmed around 2000 planets. Today I can put together a plot like this in an hour or two. These timescales are a drop in the bucket compared to how long the planets themselves have been around, perhaps even unobserved until we looked at them (or perhaps not! Both are interesting prospects). Thanks to the astronomers and OEC group for making this all available!

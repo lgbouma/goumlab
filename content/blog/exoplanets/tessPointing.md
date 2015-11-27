@@ -1,39 +1,42 @@
-Title:
+Title: 2000 known planets, and counting.
 Slug: planet-history-and-tess
 Date: 2015-11-24
-Tags: TESS
-Summary: History of planet-finding, and a Transiting Exoplanet Survey Satellite plug.
+Tags: TESS, history
+Summary: Highlights of planet-finding, and a Transiting Exoplanet Survey Satellite plug.
 
 ![Nifty]({attach}/blog/images/nifty.png)  
 
 ### We're going to learn about many new planets in your lifetime. Here's a primer on how we got here, as well as a plug for a project that'll find hundreds, if not thousands of new planets.
+-----
+## Hi there internet friend,
 
-# Hi there internet friend,
+I want to tell you about an exciting project coming soon to a neighborhood near you.
+I'm stoked on this and you should be too.[^fn-1]
 
-I want to tell you about a really exciting thing that is coming soon to a
-neighborhood near you.
-I am really, really stoked on this and you should be too.[^fn-1]
-
-This *thing* is going to find planets that orbit nearby stars.
+This *project* is a telescope. It'll be mounted on a satellite that will be
+fired to space in mid-2017.
+It's going to find planets that orbit nearby stars.
 I've talked a bit about these "exoplanets" in earlier posts, but what follows is
-an (oversimplified) history of all known planets, both exo and not:
+an (incomplete) bit of context on the "search for planets". If you're not interested
+in history, scroll down for the "why do I care?"
 
+### The search for other planets
   * 50,000BC, [behavioral modernity](https://en.wikipedia.org/wiki/Behavioral_modernity#Continuity_hypothesis),
   to 1200BC: you would have to be very observant to think
   that there was more than the Sun, the Moon, and twinkling stars. If you *were*
-  very observant, you might notice the funny, different-colored, different-moving
+  very observant, you might notice the different-colored, different-moving
   dots in the sky that are Mercury, Venus, Mars, Jupiter and Saturn.
   * 3500 years ago (1200BC): first known records of planets in [Babylonian star
   catalogs](https://en.wikipedia.org/wiki/Babylonian_star_catalogues). These
-  catalogs reference older catalogs, but more or less this is the start of recorded
+  catalogs reference older catalogs, but this is more-or-less the start of recorded
   astronomy. If we're living then and are lucky enough to access these texts, we
-  we know about 7 "celestial bodies" (Sun, Moon, Mercury,
-  Venus, Mars, Jupiter, Saturn). We probably don't think of our lovely flat Earth as
+  know about 7 "celestial bodies" (Sun, Moon, Mercury,
+  Venus, Mars, Jupiter, Saturn). We probably don't think of our Earth as
   one of them.
-  * Not much new until 1610 AD. Dutch spectacle-makers invent the telescope, and
+  * Big step forward: 1610 AD. Dutch spectacle-makers invent the telescope, and
   the designs find their way to Galileo in Italy. He uses them to build
   his own telescope and finds four of Jupiter's moons in a single year.
-  Basically makes history. Throughout the 17th century, Cassini and
+  Makes history. Throughout the 17th century, Cassini and
   Huygens discover some of Saturn's moons, and in
   * 1781 Herschel discovers Uranus.
   * 1846 Galle mathematically predicts Neptune's existence and points Le Verrier
@@ -45,12 +48,11 @@ an (oversimplified) history of all known planets, both exo and not:
   host-planets. We've also become familiar with our own blue dot's place in this
   arrangement: third-closest to the Sun.
 
-Ok. Let's take a breather, in maybe 1991. Kurt Cobain and Dave Grohl are turning out the
-lights, and we know about the 9 planets you probably heard about in elementary school:
+Ok. Let's take a breather, in maybe 1991. *Smells Like Teen Spirit* just broke, and
+we know about the 9 planets you heard about in school:
 Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto.[^fn-2]
-Along the way, many astronomers have claimed detection of planets around
-stars other than our own, but none of these claims stood up to further
-observations.
+Along the way, a few astronomers have claimed detection of planets around
+other stars, but none of these claims stand up to further observation.
 Things are about to change.
 
   * 1992: Frail and Wolszczan discover two planets orbiting a pulsar (a
@@ -69,14 +71,20 @@ Things are about to change.
     on a roughly 10-by-10 degree patch of sky.
     When planets pass in front of the stars from our line of sight, the shadow cast
     on us is observed as a predictable brightness dip (check out [Planethunters](http://www.planethunters.org/) to
-    see it for yourself).
+    see it for yourself). This leads to now over 1000 of the total 2000 known,
+    with many more candidates counting.
 
 ###*This is all great, but why should you care about other planets?*
 ## The first indications of life on other planets could likely come from this planet discovery effort.
-This deserves another post in itself but basically: there are ways to detect
-gases in the atmospheres of other planets. Earth's atmosphere couldn't have the
-composition it does without multi-cellular organisms replenishing its oxygen
-supply (among other gases). Studying the atmospheric spectra of exoplanets is a
+This deserves another post in itself.
+The basic idea is: a planet passes in front of its host star (and we observe the
+  "transiting" system as a single point of light on the sky). Some of the light
+  passing through the exoplanet's atmosphere is absorbed by its gases, causing an
+  observable shift in the spectrum of light from the system as we observe it.
+  Earth's atmosphere has "biosignature gases" - gases that couldn't maintain the
+  abundances they do without a lifecycle replenishing them.[^fn-3]
+
+Studying the atmospheric spectra of exoplanets is a
 major step towards answering an age-old question: **are we alone?**
 
 ## The more we know about other planets, the more we can understand our own.
@@ -107,3 +115,6 @@ learn together!
 [^fn-1]: I'm admittedly biased, because I'll be *contributing* to this
 project, but see for yourself.
 [^fn-2]: Meta-acronym: my very easy method just speeds up naming planets.
+[^fn-3]: The specifics of what *exactly* the best biosignatures are is still
+being worked out. However, a good example of life on Earth radically changing its
+atmosphere is in the [appearance and maintenance of oxygen](https://en.wikipedia.org/wiki/Great_Oxygenation_Event).
