@@ -6,7 +6,7 @@ Summary: Highlights of planet-finding, and a Transiting Exoplanet Survey Satelli
 
 ![Nifty]({attach}/blog/images/nifty.png)  
 
-### We're going to learn about many new planets in your lifetime. Here's a primer on how we got here, as well as a plug for a project that'll find hundreds, if not thousands of new planets.
+### We're going to learn about many new planets in your lifetime. Here's a primer on how we got to [over 2000](http://exoplanet.eu/catalog/), as well as a plug for a project that'll find hundreds, if not thousands of new planets.
 -----
 ## Hi there internet friend,
 
@@ -22,9 +22,9 @@ in history, scroll down for the "why do I care?"
 
 ### The search for other planets
   * 50,000BC, [behavioral modernity](https://en.wikipedia.org/wiki/Behavioral_modernity#Continuity_hypothesis),
-  to 1200BC: you would have to be very observant to think
-  that there was more than the Sun, the Moon, and twinkling stars. If you *were*
-  very observant, you might notice the different-colored, different-moving
+  to 1200BC: you would have to be observant to think
+  that there was more than the Sun, the Moon, twinkling stars, and that fat band of light in the night sky. If you *were*
+  observant, you might notice the different-colored, different-moving
   dots in the sky that are Mercury, Venus, Mars, Jupiter and Saturn.
   * 3500 years ago (1200BC): first known records of planets in [Babylonian star
   catalogs](https://en.wikipedia.org/wiki/Babylonian_star_catalogues). These
@@ -38,7 +38,9 @@ in history, scroll down for the "why do I care?"
   his own telescope and finds four of Jupiter's moons in a single year.
   Makes history. Throughout the 17th century, Cassini and
   Huygens discover some of Saturn's moons, and in
-  * 1781 Herschel discovers Uranus.
+  * 1781 Herschel discovers Uranus. First new planet since... well, since the first
+  time anyone thought that the the funny-moving, funny-colored dots were something
+  special.
   * 1846 Galle mathematically predicts Neptune's existence and points Le Verrier
     to its discovery.
   * Post-1850: more moons; Pluto (Tombaugh). Telescopes improve, and it turns
@@ -49,7 +51,7 @@ in history, scroll down for the "why do I care?"
   arrangement: third-closest to the Sun.
 
 Ok. Let's take a breather, in maybe 1991. *Smells Like Teen Spirit* just broke, and
-we know about the 9 planets you heard about in school:
+we know about the 9 `planets' you heard about in school:
 Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto.[^fn-2]
 Along the way, a few astronomers have claimed detection of planets around
 other stars, but none of these claims stand up to further observation.
