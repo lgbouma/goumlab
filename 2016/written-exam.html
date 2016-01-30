@@ -2,9 +2,12 @@
 <html lang="">	
 <head>
 	<meta charset="utf-8"/>
-	<title>goumlab</title>	
+	<title>Thoughts on tests. And fact-checking *The Martian* - goumlab</title>	
 	<meta name="author" content="lgbouma">
 	
+
+	<meta name="description" content="I outline nifty things I learned from qualifying exams.">
+
 
 	<link rel="top" href="#" /><link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro' rel='stylesheet' type='text/css'></link>
 	<link rel="stylesheet" href="http://lgbouma.com/theme/css/main.css" type="text/css" />
@@ -25,144 +28,18 @@
 	  <div class="wrapper">
 
 		  <div role="main" class="content">
-
-
-
-      <article>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <h1><a href="http://lgbouma.com/2015/orbits-and-update.html">Orbits in a logarithmic potential, and an update!</a></h1>
-        <h1>Pictures of galaxies show you 10% of what's there (by mass).</h1>
-<p>A pretty surprising observational result in astronomy is the radial
-velocity distribution of galaxies. First things first: for our purposes,
-there are two major classes of galaxies, (1) spiral (like our own Milky
-Way), and (2) ellipticals (which unsurprisingly are roughly ellipsoids in
-space). There are complications but let's not talk about them.</p>
-<p>Anyway, so you look at a spiral galaxy in a fancy telescope, and your first
-gut reaction (after maybe, "wow") is probably something like: "it's
-SPINNING!".</p>
-<p>Is it really? Yes. But not how you might expect. If you just look at the galaxy,
-you might think that most of its mass is where it's brightest - the center.
-Following this logic, if we wanted to guess the velocity of something far
-from the center (like say, our sun from the center of the Milky Way), we
-would write down a Newtonian circular motion equation like
-</p>
-<div class="math">\begin{equation}
-\frac{v^2}{r}\propto \frac{1}{r^2},
-\label{eq:kepler}
-\end{equation}</div>
-<p>
-for <span class="math">\(v\)</span> the velocity of our 'point particle' and <span class="math">\(r\)</span> its distance from the center
-of the galaxy. The symbol <span class="math">\(\propto\)</span> means "proportional to", and Eq.
-<span class="math">\(\ref{eq:kepler}\)</span> is essentially a statement that the (centripetal) acceleration
-of our 'test particle' (the star) is proportional to a force that falls off
-as the inverse square of the particle's distance from the galaxy's center -
-just Newtonian mechanics!</p>
-<p>Rearranging, this means that we would expect the velocity of stars in
-galaxies to fall off as <span class="math">\(r^{-1/2}\)</span>.</p>
-<p>This is not what's observed. It turns out, the behavior near the center is about what we expect for there being a lot of mass there, but as we go further out,
-the velocity of stars with respect to the galactic center <em>barely</em> decreases!</p>
-<p>What's going on? Our <em>only</em> assumption was about the mass distribution of the galaxy. So that must be wrong. There must be some unseen mass, not in the form
-of stars. Fixing a hypothetical mass distribution to match the dynamics
-of the galaxies (stars have constant velocity out to the edge of where we see
-them), we find that the mass must be proportional to the radial distance from
-the galaxy center. In other words, going outward, the MASS is going up, but
-the light we see from stars is disappearing.
-It turns out that some of this mass is in the form of gas (mostly hydrogen) that just doesn't shine very brightly, but a lot of it is still unaccounted for.</p>
-<p>This is an <em>unsolved problem</em>. The deficit is called 'dark matter'.</p>
-<h1>Orbits and the Logarithmic Potential</h1>
-<p>Okay, so past some characteristic length both spiral and elliptical galaxies
-have constant rotation velocity. What path do stars take as these spin around in them?  </p>
-<p>As part of an assignment for a class recently, I looked at the path a single
-star travels, over billions of years, in a simple model of a galaxy (a 'Mestel
-potential'). Some of these figures looked pretty cool, so I figured I would
-share them! I set up the markers to tick about 50 times per radial orbit.
-The images shown are for 50, 100, 200, 300, ..., 1000 orbits.</p>
-<p><img alt="50" src="http://lgbouma.com/2015/main50.png" /><br />
-<img alt="100" src="http://lgbouma.com/2015/main100.png" /><br />
-<img alt="200" src="http://lgbouma.com/2015/main200.png" /><br />
-<img alt="300" src="http://lgbouma.com/2015/main300.png" /><br />
-<img alt="400" src="http://lgbouma.com/2015/main400.png" /><br />
-<img alt="500" src="http://lgbouma.com/2015/main500.png" /><br />
-<img alt="600" src="http://lgbouma.com/2015/main600.png" /><br />
-<img alt="700" src="http://lgbouma.com/2015/main700.png" /><br />
-<img alt="800" src="http://lgbouma.com/2015/main800.png" /><br />
-<img alt="900" src="http://lgbouma.com/2015/main900.png" /><br />
-<img alt="1000" src="http://lgbouma.com/2015/main1000.png" />  </p>
-<p>To-do for building the website:</p>
-<ol>
-<li>Add comments!</li>
-<li>Actually write an update post on grad-school and research related topics.</li>
-<li>Write a blog post about Charles Adler's cool OoM book.</li>
-</ol>
-<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width < 768) ? "left" : align;
-        indent = (screen.width < 768) ? "0em" : indent;
-        linebreak = (screen.width < 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    var location_protocol = (false) ? 'https' : document.location.protocol;
-    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-</script>
-=======
-        <h1><a href="http://lgbouma.com/2015/planet-history-and-tess.html"></a></h1>
-=======
-        <h1><a href="http://lgbouma.com/2015/planet-history-and-tess.html">2000 known planets, and counting.</a></h1>
->>>>>>> gh-pages
-        <p><img alt="Nifty" src="http://lgbouma.com/2015/nifty.png" />  </p>
-<h3>We're going to learn about many new planets in your lifetime. Here's a primer on how we got to <a href="http://exoplanet.eu/catalog/">over 2000</a>, as well as a plug for a project that'll find hundreds, if not thousands of new planets.</h3>
-=======
-        <h1><a href="http://lgbouma.com/2016/written-exam.html">Thoughts on tests. And fact-checking *The Martian*</a></h1>
-        <h1>The purpose of tests is to learn things.</h1>
+	<article class="full">
+			
+		<h1>Thoughts on tests. And fact-checking *The Martian*</h1>
+		
+<div class="metadata">
+  <time datetime="2016-01-30T00:00:00-05:00" pubdate>Sat 30 January 2016</time>
+    <address class="vcard author">
+      by <a class="url fn" href="http://lgbouma.com/author/lgbouma.html">lgbouma</a>
+    </address>
+  in <a href="http://lgbouma.com/category/learning.html">learning</a>
+<p class="tags">tagged <a href="http://lgbouma.com/tag/tests.html">tests</a>, <a href="http://lgbouma.com/tag/electromagnetism.html">electromagnetism</a>, <a href="http://lgbouma.com/tag/statistical-mechanics.html">statistical mechanics</a></p></div>		
+		<h1>The purpose of tests is to learn things.</h1>
 <p>In an academic test, an examiner learns whether or not
 an examinee can perform some task.
 The examinee learns the same.
@@ -251,7 +128,6 @@ Watney, since they'll have lower kinetic energies. The actual escape
 velocities will be <em>lower</em> than the number we gave.</p>
 <p>Sorry Matt Damon, you never stood a chance.</p>
 <p><img alt="astronaut" src="http://lgbouma.com/2016/Astronaut-EVA.png" />  </p>
->>>>>>> gh-pages
 <hr />
 <p>The original purpose of this blog post was going to be a review of cool
 things I learned about during qual revision, including:</p>
@@ -297,9 +173,6 @@ maintained at about 1/3 of atmospheric pressure.&#160;<a class="footnote-backref
 </li>
 </ol>
 </div>
-<<<<<<< HEAD
->>>>>>> gh-pages
-=======
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",
@@ -356,62 +229,15 @@ maintained at about 1/3 of atmospheric pressure.&#160;<a class="footnote-backref
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-</script>
->>>>>>> gh-pages
-      </article>
+</script>	
 
-      <hr />
+	</article>
 
-        <div>
-          <h3>Last posts</h3>
-          <ol class="archive">
-    
+    <p>
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="" data-lang="en" data-size="large" data-related="">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</p>
 
-
-      <li>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<a href="http://lgbouma.com/2015/orbits-and-update.html" rel="bookmark" title="Permalink to Where's the missing mass?">Where's the missing mass?</a>
-=======
-=======
-<a href="http://lgbouma.com/2015/planet-history-and-tess.html" rel="bookmark" title="Permalink to 2000 known planets, and counting.">2000 known planets, and counting.</a>
-  <time datetime="2015-11-24T00:00:00-05:00" pubdate>Tue 24 November 2015</time>
-<p class="tags">tags: <a href="http://lgbouma.com/tag/tess.html">TESS</a><a href="http://lgbouma.com/tag/history.html">history</a></p></a>      </li>
-
-
-      <li>
->>>>>>> gh-pages
-<a href="http://lgbouma.com/2015/missing-mass.html" rel="bookmark" title="Permalink to Where's the missing mass?">Where's the missing mass?</a>
->>>>>>> gh-pages
-  <time datetime="2015-10-03T00:00:00-04:00" pubdate>Sat 03 October 2015</time>
-<p class="tags">tags: <a href="http://lgbouma.com/tag/galaxies.html">galaxies</a><a href="http://lgbouma.com/tag/dark-matter.html">dark matter</a><a href="http://lgbouma.com/tag/python.html">python</a></p></a>      </li>
-
-
-      <li>
->>>>>>> gh-pages
-<a href="http://lgbouma.com/2015/qual-MCint.html" rel="bookmark" title="Permalink to On testing; 'shoot-first, clean-up-later' integration">On testing; 'shoot-first, clean-up-later' integration</a>
-  <time datetime="2015-09-04T00:00:00-04:00" pubdate>Fri 04 September 2015</time>
-<p class="tags">tags: <a href="http://lgbouma.com/tag/quals.html">quals</a><a href="http://lgbouma.com/tag/python.html">python</a><a href="http://lgbouma.com/tag/monte-carlo.html">monte-carlo</a></p></a>      </li>
-
-
-      <li>
-<a href="http://lgbouma.com/2015/classic-matplotlib.html" rel="bookmark" title="Permalink to Exoplanet distributions in matplotlib">Exoplanet distributions in matplotlib</a>
-  <time datetime="2015-08-15T21:40:00-04:00" pubdate>Sat 15 August 2015</time>
-<p class="tags">tags: <a href="http://lgbouma.com/tag/open-exoplanet-catalog.html">open-exoplanet-catalog</a><a href="http://lgbouma.com/tag/plotting.html">plotting</a><a href="http://lgbouma.com/tag/python.html">python</a><a href="http://lgbouma.com/tag/matplotlib.html">matplotlib</a></p></a>      </li>
-
-
-      <li>
-<a href="http://lgbouma.com/2015/classRev-compPhysPython.html" rel="bookmark" title="Permalink to Computational Physics with Python">Computational Physics with Python</a>
-  <time datetime="2015-08-13T00:00:00-04:00" pubdate>Thu 13 August 2015</time>
-<p class="tags">tags: <a href="http://lgbouma.com/tag/computation.html">computation</a><a href="http://lgbouma.com/tag/python.html">python</a><a href="http://lgbouma.com/tag/physics.html">physics</a><a href="http://lgbouma.com/tag/class.html">class</a><a href="http://lgbouma.com/tag/review.html">review</a></p></a>      </li>
-
-
-
-
-          </ol>
-        </div>
 
 		  </div>	
 		  
@@ -423,7 +249,7 @@ maintained at about 1/3 of atmospheric pressure.&#160;<a class="footnote-backref
 	              <li ><a href="http://lgbouma.com/category/about.html">about</a></li>
 	              <li ><a href="http://lgbouma.com/category/computation.html">computation</a></li>
 	              <li ><a href="http://lgbouma.com/category/exoplanets.html">exoplanets</a></li>
-	              <li ><a href="http://lgbouma.com/category/learning.html">learning</a></li>
+	              <li class="active"><a href="http://lgbouma.com/category/learning.html">learning</a></li>
 	          </ul>
 	        </nav>
 
