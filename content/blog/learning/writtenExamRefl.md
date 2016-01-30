@@ -1,17 +1,17 @@
-Title: Thoughts on tests. And fact-checking *The Martian*
+Title: On testing. Oh also, fact-checking The Martian.
 Slug: written-exam
 Date: 2016-01-30
 Tags: tests, electromagnetism, statistical mechanics
 Summary: I outline nifty things I learned from qualifying exams.
 
-# The purpose of tests is to learn things.
+## The purpose of tests is to learn things.
 In an academic test, an examiner learns whether or not
 an examinee can perform some task.
 The examinee learns the same.
 In many cases, all parties concerned then use the difficulty of the task
 to infer the test-taker's knowledge or ability in the relevant field.
 
-# Tests are useful beyond school.
+## Tests are useful beyond school.
 In programming, tests teach a programmer whether or not her program works
 as expected.
 Entire [software design philosophies](https://en.wikipedia.org/wiki/Unit_testing)
@@ -30,7 +30,7 @@ elevate this type of testing and call it experimentation.
 My personal favorite summary of what scientists do?
 **Test and tell**.
 
-# Sorry Matt Damon, you never stood a chance.
+## Sorry Matt Damon, you never stood a chance.
 In physics, academic tests are presented as "here is a physical situation,
 and a few things you might need to know to answer this question.
 Now work out some subset of the interesting things you might want to know
