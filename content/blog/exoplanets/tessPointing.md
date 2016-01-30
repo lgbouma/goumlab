@@ -17,21 +17,22 @@ This *project* is a telescope. It'll be mounted on a satellite that will be
 fired to space in mid-2017.
 It's going to find planets that orbit nearby stars.
 I've talked a bit about these "exoplanets" in earlier posts, but what follows is
-an (incomplete) bit of context on the "search for planets". If you're not interested
+an (incomplete) bit of context on the "search for planets". If you're less interested
 in history, scroll down for the "why do I care?"
 
 ### The search for other planets
   * 50,000BC, [behavioral modernity](https://en.wikipedia.org/wiki/Behavioral_modernity#Continuity_hypothesis),
-  to 1200BC: you would have to be observant to think
+  to 1200BC: you would have to be observant (or a Polynesian navigator) to know
   that there was more than the Sun, the Moon, twinkling stars, and that fat band of light in the night sky. If you *were*
-  observant, you might notice the different-colored, different-moving
-  dots in the sky that are Mercury, Venus, Mars, Jupiter and Saturn.
+  observant, you would notice a few different-colored dots that *moved*.
+  None of the other whitish-yellow move, but these ones do and did!
+  These are Mercury, Venus, Mars, Jupiter and Saturn.
   * 3500 years ago (1200BC): first known records of planets in [Babylonian star
   catalogs](https://en.wikipedia.org/wiki/Babylonian_star_catalogues). These
   catalogs reference older catalogs, but this is more-or-less the start of recorded
-  astronomy. If we're living then and are lucky enough to access these texts, we
+  astronomy. If you're lucky enough to access these texts, you'd
   know about 7 "celestial bodies" (Sun, Moon, Mercury,
-  Venus, Mars, Jupiter, Saturn). We probably don't think of our Earth as
+  Venus, Mars, Jupiter, Saturn). You probably wouldn't think of our Earth as
   one of them.
   * Big step forward: 1610 AD. Dutch spectacle-makers invent the telescope, and
   the designs find their way to Galileo in Italy. He uses them to build
@@ -51,9 +52,11 @@ in history, scroll down for the "why do I care?"
   arrangement: third-closest to the Sun.
 
 Ok. Let's take a breather, in maybe 1991. *Smells Like Teen Spirit* just broke, and
-we know about the 9 `planets' you heard about in school:
+we know about the 9 'planets' you heard about in school:
 Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto.[^fn-2]
-Along the way, a few astronomers have claimed detection of planets around
+We've even sent robotic *emissaries* to explore them (e.g., the Voyagers to the
+outer planets, Pioneers to Venus, and the Vikings to Mars).
+On the ground, a few astronomers have claimed detection of planets around
 other stars, but none of these claims stand up to further observation.
 Things are about to change.
 
@@ -114,9 +117,10 @@ I'm going to be writing about *TESS*, along with the field of exoplanets and
 my journey through it, on this blog-space. Swing by every now and then, we'll
 learn together!
 
-[^fn-1]: I'm admittedly biased, because I'll be *contributing* to this
+[^fn-1]: I'm biased, because I'll be *contributing* to this
 project, but see for yourself.
-[^fn-2]: Meta-acronym: my very easy method just speeds up naming planets.
+[^fn-2]: Meta-acronym: my very easy method just speeds up naming planets. Pluto stays, for
+the acronym.
 [^fn-3]: The specifics of what *exactly* the best biosignatures are is still
 being worked out. However, a good example of life on Earth radically changing its
 atmosphere is in the [appearance and maintenance of oxygen](https://en.wikipedia.org/wiki/Great_Oxygenation_Event).
