@@ -73,30 +73,29 @@ ordinary conservation of momentum, since the Taylor expansion we used on
 $\ln(1+x)$ is good enough for small changes in our "rocket's" mass (here,
 $\epsilon$ is about a hundredth of its initial mass).
 
-Now I ask you: **is it reasonable to think that gas escaping from an astronaut's
+Now I ask you: is it reasonable to think that gas escaping from an astronaut's
 space suit into vacuum will do so at 20 kilometers per second? (about
-72,000kph, or one four-thousandth the speed of light)**.
+72,000kph, or one four-thousandth the speed of light).
 
 If you want to actually *work out* the speed of the escaping gas, you might
 need some statistical mechanics.[^fn-3] Take a box filled with an ideal gas
-gas at temperature $T \approx 300\text{K}$
-and particle number $N = \rho V / m \approx 0.05\text{kg} /
-(28\times 2 \times 10^{-27}\text{kg}) \approx 2\times10^{25}$, where I'm
-taking the proton mass to be about $2\times 10^{-27}\text{kg}$ and assuming
-air is all nitrogen.[^fn-4]  
+gas at temperature $T \approx 300\text{K}$.
 
 The trickier bit is then calculating the flux of particles
 (number per unit time per unit area) out of the hole into the vacuum
 (assuming none return through the hole).
-If you do this, you can work out the average kinetic energy of escaping
+Doing this, I can then work out the average kinetic energy of escaping
 particles to be of order $2kT$ for $k$ the Boltzmann constant. From
 that energy, I get an escape velocity that's of order
-$v_e \sim (4 k T / m)^{1/2} \approx 600 \text{m/s}$. This actually assumes
+$v_e \sim (4 k T / m)^{1/2} \approx 600 \text{m/s}$. 
+Here for the particle mass $m$ we let all the gas in the suit be nitrogen[^fn-4].
+
+This actually assumes
 that the temperature of the gas in the space-suit is constant -- which won't
 be true since when the hot molecules leave, the temperature will go down.
 However, that just means their escape will impart even less momentum to
 Watney, since they'll have lower kinetic energies. The actual escape
-velocities will be *lower* than the number we gave.
+velocities will be *lower* than the number we gave above.
 
 Sorry Matt Damon, you never stood a chance.
 
