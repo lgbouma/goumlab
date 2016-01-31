@@ -101,6 +101,8 @@ velocities will be *lower* than the number we gave.
 Sorry Matt Damon, you never stood a chance.
 
 ![astronaut]({attach}/blog/images/Astronaut-EVA.png)  
+Image: Wikimedia commons, originally NASA.
+Inside the suit is Untethered U.S. astronaut Bruce McCandless.
 
 -----
 The original purpose of this blog post was going to be a review of cool
