@@ -106,22 +106,9 @@ Inside the suit is Untethered U.S. astronaut Bruce McCandless.
 
 -----
 The original purpose of this blog post was going to be a review of cool
-things I learned about during qual revision, including:
+things I learned about during qual revision, including:  1. Why from a *dipole* picture we can understand the wavelength-dependence of Rayleigh scattering and thus explain the blue sky and other optical phenomena in the atmosphere. 2. The first trans-Atlantic cable to be laid down, and how it uses water as an outer conductor in a coaxial cable arrangement. 3. The fact that if I hang a rope (or a chain) or chain of constant linear density between two poles, it rests in a shape perfectly described by the hyperbolic cosine function. 4. Why if I shine light at short enough wavelength at a metal, it goes through the metal. 5. How as a rough approximation, treating solids as a bunch of atoms bound together by springs lets me predict almost any relevant physical property you can measure.
 
-  1. Why from a *dipole* picture we can understand the wavelength-dependence of Rayleigh scattering and thus explain the blue sky and other optical
-  phenomena in the atmosphere.
-  2. The first trans-Atlantic cable to be laid down, and how it uses water
-as an outer conductor in a coaxial cable arrangement.
-  3. The fact that if I hang a rope (or a chain) or chain of constant linear
-density between two poles, it rests in a shape perfectly described by the
-hyperbolic cosine function.
-  4. Why if I shine light at short enough wavelength at a metal, it goes
-through the metal.
-  5. How as a rough approximation, treating solids as a bunch of atoms
-bound together by springs lets me predict almost any relevant physical
-property you can measure.
-
-
+I'll write about a few of those in future posts. Until next time!
 
 
 
