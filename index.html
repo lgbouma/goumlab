@@ -29,246 +29,6 @@
 
 
       <article>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <h1><a href="http://lgbouma.com/2015/orbits-and-update.html">Orbits in a logarithmic potential, and an update!</a></h1>
-        <h1>Pictures of galaxies show you 10% of what's there (by mass).</h1>
-<p>A pretty surprising observational result in astronomy is the radial
-velocity distribution of galaxies. First things first: for our purposes,
-there are two major classes of galaxies, (1) spiral (like our own Milky
-Way), and (2) ellipticals (which unsurprisingly are roughly ellipsoids in
-space). There are complications but let's not talk about them.</p>
-<p>Anyway, so you look at a spiral galaxy in a fancy telescope, and your first
-gut reaction (after maybe, "wow") is probably something like: "it's
-SPINNING!".</p>
-<p>Is it really? Yes. But not how you might expect. If you just look at the galaxy,
-you might think that most of its mass is where it's brightest - the center.
-Following this logic, if we wanted to guess the velocity of something far
-from the center (like say, our sun from the center of the Milky Way), we
-would write down a Newtonian circular motion equation like
-</p>
-<div class="math">\begin{equation}
-\frac{v^2}{r}\propto \frac{1}{r^2},
-\label{eq:kepler}
-\end{equation}</div>
-<p>
-for <span class="math">\(v\)</span> the velocity of our 'point particle' and <span class="math">\(r\)</span> its distance from the center
-of the galaxy. The symbol <span class="math">\(\propto\)</span> means "proportional to", and Eq.
-<span class="math">\(\ref{eq:kepler}\)</span> is essentially a statement that the (centripetal) acceleration
-of our 'test particle' (the star) is proportional to a force that falls off
-as the inverse square of the particle's distance from the galaxy's center -
-just Newtonian mechanics!</p>
-<p>Rearranging, this means that we would expect the velocity of stars in
-galaxies to fall off as <span class="math">\(r^{-1/2}\)</span>.</p>
-<p>This is not what's observed. It turns out, the behavior near the center is about what we expect for there being a lot of mass there, but as we go further out,
-the velocity of stars with respect to the galactic center <em>barely</em> decreases!</p>
-<p>What's going on? Our <em>only</em> assumption was about the mass distribution of the galaxy. So that must be wrong. There must be some unseen mass, not in the form
-of stars. Fixing a hypothetical mass distribution to match the dynamics
-of the galaxies (stars have constant velocity out to the edge of where we see
-them), we find that the mass must be proportional to the radial distance from
-the galaxy center. In other words, going outward, the MASS is going up, but
-the light we see from stars is disappearing.
-It turns out that some of this mass is in the form of gas (mostly hydrogen) that just doesn't shine very brightly, but a lot of it is still unaccounted for.</p>
-<p>This is an <em>unsolved problem</em>. The deficit is called 'dark matter'.</p>
-<h1>Orbits and the Logarithmic Potential</h1>
-<p>Okay, so past some characteristic length both spiral and elliptical galaxies
-have constant rotation velocity. What path do stars take as these spin around in them?  </p>
-<p>As part of an assignment for a class recently, I looked at the path a single
-star travels, over billions of years, in a simple model of a galaxy (a 'Mestel
-potential'). Some of these figures looked pretty cool, so I figured I would
-share them! I set up the markers to tick about 50 times per radial orbit.
-The images shown are for 50, 100, 200, 300, ..., 1000 orbits.</p>
-<p><img alt="50" src="http://lgbouma.com/2015/main50.png" /><br />
-<img alt="100" src="http://lgbouma.com/2015/main100.png" /><br />
-<img alt="200" src="http://lgbouma.com/2015/main200.png" /><br />
-<img alt="300" src="http://lgbouma.com/2015/main300.png" /><br />
-<img alt="400" src="http://lgbouma.com/2015/main400.png" /><br />
-<img alt="500" src="http://lgbouma.com/2015/main500.png" /><br />
-<img alt="600" src="http://lgbouma.com/2015/main600.png" /><br />
-<img alt="700" src="http://lgbouma.com/2015/main700.png" /><br />
-<img alt="800" src="http://lgbouma.com/2015/main800.png" /><br />
-<img alt="900" src="http://lgbouma.com/2015/main900.png" /><br />
-<img alt="1000" src="http://lgbouma.com/2015/main1000.png" />  </p>
-<p>To-do for building the website:</p>
-<ol>
-<li>Add comments!</li>
-<li>Actually write an update post on grad-school and research related topics.</li>
-<li>Write a blog post about Charles Adler's cool OoM book.</li>
-</ol>
-<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width < 768) ? "left" : align;
-        indent = (screen.width < 768) ? "0em" : indent;
-        linebreak = (screen.width < 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    var location_protocol = (false) ? 'https' : document.location.protocol;
-    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-</script>
-=======
-        <h1><a href="http://lgbouma.com/2015/planet-history-and-tess.html"></a></h1>
-=======
-        <h1><a href="http://lgbouma.com/2015/planet-history-and-tess.html">2000 known planets, and counting.</a></h1>
->>>>>>> gh-pages
-        <p><img alt="Nifty" src="http://lgbouma.com/2015/nifty.png" />  </p>
-<h3>We're going to learn about many new planets in your lifetime. Here's a primer on how we got to <a href="http://exoplanet.eu/catalog/">over 2000</a>, as well as a plug for a project that'll find hundreds, if not thousands of new planets.</h3>
-=======
-        <h1><a href="http://lgbouma.com/2016/written-exam.html">Thoughts on tests. And fact-checking *The Martian*</a></h1>
-        <h1>The purpose of tests is to learn things.</h1>
-=======
-        <h1><a href="http://lgbouma.com/2016/written-exam.html">On testing. Oh also, fact-checking The Martian.</a></h1>
-        <h2>The purpose of tests is to learn things.</h2>
->>>>>>> gh-pages
-<p>In an academic test, an examiner learns whether or not
-an examinee can perform some task.
-The examinee learns the same.
-In many cases, all parties concerned then use the difficulty of the task
-to infer the test-taker's knowledge or ability in the relevant field.</p>
-<h2>Tests are useful beyond school.</h2>
-<p>In programming, tests teach a programmer whether or not her program works
-as expected.
-Entire <a href="https://en.wikipedia.org/wiki/Unit_testing">software design philosophies</a>
-stem from the idea that systematic testing is an effective way to write
-software.</p>
-<p>In the public sphere, IQ tests are indicators
-of national prosperity.<sup id="fnref:fn-1"><a class="footnote-ref" href="#fn:fn-1" rel="footnote">1</a></sup>
-While your personal IQ score barely correlates with your individual outcomes,
-your <em>nation's</em> mean IQ score is a good predictor of your happiness, how
-much money you make, and the efficacy of your government.</p>
-<p>In science, testing is the mechanism that ultimately supports
-or rejects people's claims about "the way things be". We
-elevate this type of testing and call it experimentation.
-My personal favorite summary of what scientists do?
-<strong>Test and tell</strong>.</p>
-<h2>Sorry Matt Damon, you never stood a chance.</h2>
-<p>In physics, academic tests are presented as "here is a physical situation,
-and a few things you might need to know to answer this question.
-Now work out some subset of the interesting things you might want to know
-about the situation."</p>
-<p>For example, consider the scene from <em>The Martian</em> when Matt Damon, floating
-weightless through space, punctures a hole in his spacesuit to propel himself
-à la Iron Man to his crew.<sup id="fnref:fn-2"><a class="footnote-ref" href="#fn:fn-2" rel="footnote">2</a></sup>
-This situation begs a few questions. Would poking a hole in his spacesuit
-actually give Matt Damon enough thrust to make it to the crew?
-Would he make it without depleting his air supply?
-How can we formulate the mechanism that propels him?</p>
-<p>In fact, variants of the above problems were given on the
-qualifying exams I just took. The examiners prompted a solution using
-statistical mechanics (box with ideal gas inside, how does it effuse?)
-but the feasibility of the physics can be understood just as well
-from ordinary mechanics.
-Specifically, we're told the speed difference between the
-Hermes and the MAV is <span class="math">\(11\text{m/s}\)</span>. In rocket lingo, this means Watney
-needs to boost his speed (a <em>delta-v</em>) by <span class="math">\(11\text{m/s}\)</span>.
-Let <span class="math">\(v_e\)</span> be the exhaust velocity, <span class="math">\(m_f \approx 99.95 \text{kg}\)</span> be the final mass
-after he ejects <em>all</em> the air in his suit, and
-<span class="math">\(m_i \approx 100 \text{kg} = m_i + \epsilon\)</span> be the initial
-mass of Watney plus the air in his suit. I guessed that he has maybe
-<span class="math">\(50 \text{liter} = 0.05 \text{m}^3\)</span> of air in the suit, which has density about of <span class="math">\(1 \text{kg/m}^3\)</span>
-and thus a mass of about <span class="math">\(\epsilon = 0.05\text{kg}\)</span>.</p>
-<p>Using the <a href="https://en.wikipedia.org/wiki/Tsiolkovsky_rocket_equation">ideal rocket equation</a>
-(can be derived from Newton's second with a mass that varies in time
-with a constant rate), we find
-</p>
-<div class="math">$$\Delta v = v_e \ln (m_i/m_f) = v_e \ln (1 + \epsilon/m_f).$$</div>
-<p>
-In this form, we can Taylor expand (<span class="math">\(\ln 1 + x \approx x\)</span>) to get
-</p>
-<div class="math">$$\Delta v \approx v_e \epsilon/m_f.$$</div>
-<p>
-Then
-</p>
-<div class="math">$$ v_e \approx \Delta v m_f/\epsilon \approx 11\text{m/s} \times 99.95 \text{kg}/0.05\text{kg} \approx 20,000\text{m/s}.$$</div>
-<p>Note that the rocket equation here simplifies to what you would get from
-ordinary conservation of momentum, since the Taylor expansion we used on
-<span class="math">\(\ln(1+x)\)</span> is good enough for small changes in our "rocket's" mass (here,
-<span class="math">\(\epsilon\)</span> is about a hundredth of its initial mass).</p>
-<p>Now I ask you: is it reasonable to think that gas escaping from an astronaut's
-space suit into vacuum will do so at 20 kilometers per second? (about
-72,000kph, or one four-thousandth the speed of light).</p>
-<p>If you want to actually <em>work out</em> the speed of the escaping gas, you might
-need some statistical mechanics.<sup id="fnref:fn-3"><a class="footnote-ref" href="#fn:fn-3" rel="footnote">3</a></sup> Take a box filled with an ideal gas
-gas at temperature <span class="math">\(T \approx 300\text{K}\)</span>.</p>
-<p>The trickier bit is then calculating the flux of particles
-(number per unit time per unit area) out of the hole into the vacuum
-(assuming none return through the hole).
-Doing this, I can then work out the average kinetic energy of escaping
-particles to be of order <span class="math">\(2kT\)</span> for <span class="math">\(k\)</span> the Boltzmann constant. From
-that energy, I get an escape velocity that's of order
-<span class="math">\(v_e \sim (4 k T / m)^{1/2} \approx 600 \text{m/s}\)</span>. 
-Here for the particle mass <span class="math">\(m\)</span> we let all the gas in the suit be nitrogen<sup id="fnref:fn-4"><a class="footnote-ref" href="#fn:fn-4" rel="footnote">4</a></sup>.</p>
-<p>This actually assumes
-that the temperature of the gas in the space-suit is constant -- which won't
-be true since when the hot molecules leave, the temperature will go down.
-However, that just means their escape will impart even less momentum to
-Watney, since they'll have lower kinetic energies. The actual escape
-velocities will be <em>lower</em> than the number we gave above.</p>
-<p>Sorry Matt Damon, you never stood a chance.</p>
-<<<<<<< HEAD
-<p><img alt="astronaut" src="http://lgbouma.com/2016/Astronaut-EVA.png" />  </p>
->>>>>>> gh-pages
-=======
-<p><img alt="astronaut" src="http://lgbouma.com/2016/Astronaut-EVA.png" /><br />
-Image: Wikimedia commons, originally NASA.
-Inside the suit is Untethered U.S. astronaut Bruce McCandless.</p>
->>>>>>> gh-pages
-<hr />
-<p>The original purpose of this blog post was going to be a review of cool
-things I learned about during qual revision, including:  1. Why from a <em>dipole</em> picture we can understand the wavelength-dependence of Rayleigh scattering and thus explain the blue sky and other optical phenomena in the atmosphere. 2. The first trans-Atlantic cable to be laid down, and how it uses water as an outer conductor in a coaxial cable arrangement. 3. The fact that if I hang a rope (or a chain) or chain of constant linear density between two poles, it rests in a shape perfectly described by the hyperbolic cosine function. 4. Why if I shine light at short enough wavelength at a metal, it goes through the metal. 5. How as a rough approximation, treating solids as a bunch of atoms bound together by springs lets me predict almost any relevant physical property you can measure.</p>
-<p>I'll write about a few of those in future posts. Until next time!</p>
-<div class="footnote">
-<hr />
-=======
         <h1><a href="http://lgbouma.com/2016/letter-to-j.html">Gravitational waves and you.</a></h1>
         <p><em>Mom writes (in regard to the recent detection of tidal distortions of space and 
 time – 'gravitational waves'): "so I told the folks at dinner last night about it - and 
@@ -319,7 +79,6 @@ of cosmic history.</p>
 <p>So I can tell you that, and then you can say: </p>
 <h1>"Yeah, but why does it matter for my life?"</h1>
 <p>Here are some questions that astrophysics and other branches of science get at:</p>
->>>>>>> gh-pages
 <ol>
 <li>What exists in the universe?</li>
 <li>How did it get there?</li>
@@ -327,70 +86,6 @@ of cosmic history.</p>
 <li>What will the future hold?</li>
 <li>How can we keep being a part of it?</li>
 </ol>
-<<<<<<< HEAD
-</div>
-<<<<<<< HEAD
->>>>>>> gh-pages
-=======
-<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width < 768) ? "left" : align;
-        indent = (screen.width < 768) ? "0em" : indent;
-        linebreak = (screen.width < 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    var location_protocol = (false) ? 'https' : document.location.protocol;
-    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-</script>
->>>>>>> gh-pages
-=======
 <p>These are all very big and poorly defined questions. They matter to my life, 
 and over less than 20 generations of people, we've gone from speculation to 
 measurable facts about many of them. This happened once we
@@ -411,7 +106,6 @@ This discovery is an important new one, so it matters for my life. </p>
 If you're interested, I can point you to a bunch of 'em.</p>
 <p>XOXOXO from your cousin,
 L</p>
->>>>>>> gh-pages
       </article>
 
       <hr />
@@ -423,37 +117,24 @@ L</p>
 
 
       <li>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<a href="http://lgbouma.com/2015/orbits-and-update.html" rel="bookmark" title="Permalink to Where's the missing mass?">Where's the missing mass?</a>
-=======
-=======
-=======
 <a href="http://lgbouma.com/2016/written-exam.html" rel="bookmark" title="Permalink to On testing. Oh also, fact-checking The Martian.">On testing. Oh also, fact-checking The Martian.</a>
   <time datetime="2016-01-30T00:00:00-05:00" pubdate>Sat 30 January 2016</time>
 <p class="tags">tags: <a href="http://lgbouma.com/tag/tests.html">tests</a><a href="http://lgbouma.com/tag/electromagnetism.html">electromagnetism</a><a href="http://lgbouma.com/tag/statistical-mechanics.html">statistical mechanics</a></p></a>      </li>
 
 
       <li>
->>>>>>> gh-pages
 <a href="http://lgbouma.com/2015/planet-history-and-tess.html" rel="bookmark" title="Permalink to 2000 known planets, and counting.">2000 known planets, and counting.</a>
   <time datetime="2015-11-24T00:00:00-05:00" pubdate>Tue 24 November 2015</time>
 <p class="tags">tags: <a href="http://lgbouma.com/tag/tess.html">TESS</a><a href="http://lgbouma.com/tag/history.html">history</a></p></a>      </li>
 
 
       <li>
->>>>>>> gh-pages
 <a href="http://lgbouma.com/2015/missing-mass.html" rel="bookmark" title="Permalink to Where's the missing mass?">Where's the missing mass?</a>
->>>>>>> gh-pages
   <time datetime="2015-10-03T00:00:00-04:00" pubdate>Sat 03 October 2015</time>
 <p class="tags">tags: <a href="http://lgbouma.com/tag/galaxies.html">galaxies</a><a href="http://lgbouma.com/tag/dark-matter.html">dark matter</a><a href="http://lgbouma.com/tag/python.html">python</a></p></a>      </li>
 
 
       <li>
->>>>>>> gh-pages
 <a href="http://lgbouma.com/2015/qual-MCint.html" rel="bookmark" title="Permalink to On testing; 'shoot-first, clean-up-later' integration">On testing; 'shoot-first, clean-up-later' integration</a>
   <time datetime="2015-09-04T00:00:00-04:00" pubdate>Fri 04 September 2015</time>
 <p class="tags">tags: <a href="http://lgbouma.com/tag/quals.html">quals</a><a href="http://lgbouma.com/tag/python.html">python</a><a href="http://lgbouma.com/tag/monte-carlo.html">monte-carlo</a></p></a>      </li>
