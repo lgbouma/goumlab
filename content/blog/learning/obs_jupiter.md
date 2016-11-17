@@ -18,7 +18,7 @@ However, when I haven't _done_ or _seen_ something for myself, I find that it's
 easier for me to maintain some shred of doubt or incredulity. I only reach the
 point of overwhelming certainty in a story when I check it for myself.
 
-A classic story in astronomy, and all of science, concerns Gallileo, turning a 
+A classic story in astronomy, and all of science, concerns Galileo Galilei, turning a 
 telescope he built from dutch lens-maker's plans towards Jupiter.
 This morning, I did the same!
 
@@ -36,7 +36,7 @@ roughly, as the 4 moons).
 The 4 points: Io, Europa, Ganymede, Callisto.
 
 Europa looks like it's a bit inclined with respect to the plane of the other
-three. 
+three (however this is a trick of forced perspective). 
 
 Jupiter's disk is _massive_. The magnification we had on the scope was perfect
 for the job.
@@ -47,6 +47,7 @@ magnifications. And how to take better pictures)
 Pics or it didn't happen; put my camera phone to the eyepiece. Some day soon:
 better cameras, less blur.
 Pictures below are with no filter, and with a bit of recoloring to remove glare.
+The bands aren't visible, but the moons and planet are.
 
 
 ![nofilter]({attach}/blog/images/jupiter_nofilter.png)  
