@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from os.path import expanduser
 
 AUTHOR = u'lgbouma'
 SITENAME = u'goumlab'
@@ -41,7 +42,8 @@ DEFAULT_PAGINATION = 15
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
-PLUGIN_PATHS = ['/home/lgbouma/Dropbox/Documents/blog/pelican-plugins']
+home = expanduser('~')
+PLUGIN_PATHS = [home+'/Dropbox/Documents/blog/pelican-plugins']
 PLUGINS = ['render_math']
 
-THEME = "/home/lgbouma/Dropbox/Documents/blog/pelicanThemes/pelican-simplegrey"
+THEME = home+'/Dropbox/Documents/blog/pelicanThemes/pelican-simplegrey'
