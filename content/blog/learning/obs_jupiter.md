@@ -9,8 +9,9 @@ A compelling and powerful argument for why this OK is that you can check
 their claims for yourself. 
 However, most people (myself included), often don't have the time, the 
 means, or the interest. 
-We trust that other people indeed have done the things that they
-claim. Indeed we rely on it, and have little reason to doubt them (cars work;
+We trust that other people have done the things that they
+claim. 
+Indeed we rely on it, and have little reason to doubt them (cars work;
 computers work; telephones work).
 
 However, when I haven't _done_ or _seen_ something for myself, I find that it's
