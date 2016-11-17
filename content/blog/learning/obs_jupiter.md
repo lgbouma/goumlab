@@ -36,7 +36,7 @@ roughly, as the 4 moons).
 The 4 points: Io, Europa, Ganymede, Callisto. (Which is which? I'm not sure
 yet. It will require more observing).
 
-Europa looks like it's a bit inclined with respect to the plane of the other
+One looks like it's a bit inclined with respect to the plane of the other
 three (however this is a trick of forced perspective). 
 
 Jupiter's disk is _massive_. The magnification we had on the scope was perfect
