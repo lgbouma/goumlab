@@ -5,12 +5,17 @@ Date: 2015-08-12
 Tags: physics, computation, python, manifesto
 
 # Blog purpose:
-This blog is a place to keep track of all the wonderful things that I'll be learning in graduate school. I'll be diving into a physics program, and I'm expecting to start working on:
+Welcome!
+This blog is a place to share and discuss some of the wonderful things that I'll
+be learning in graduate school. I'm a physics student. Most of what
+I expect to write about here will cover:
 
-* Astrophysics 
+* Astrophysics
 * Exoplanets
-* Scientific computing (if I have a choice, in Python)
+* Doing cool things with computers (physics, statistics, art, music, ...)
 
-If what I have to say about those topics (or others, as we go along) interests you, awesome! Posts in `learning` are going to be chiefly for my benefit, while posts in `computation` and `research` will be tailored to broader audiences. 
-
-
+If what I have to say about these topics (or others, as we go along) interests
+you, awesome! Posts in `learning` will exhibit what I'm processing
+in my coursework and reading,
+while posts in `computation` and `exoplanets` will be tailored more broadly
+towards code that I write, or research ideas that I'm hashing out.
