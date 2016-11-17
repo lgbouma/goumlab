@@ -50,7 +50,7 @@ assessment of what you can and cannot do.</p>
 <p>It called Monte-Carlo integration: you have some bounded function <span class="math">\(f(x)\)</span> you want to integrate over an interval <span class="math">\(I=[a,b]\)</span>, but <span class="math">\(f\)</span> is poorly behaved on the interval. It might even be pathological, for instance oscillating infinitely between say 0 and 1 when near the edges of the interval. All the standard integration techniques -- the trapezoidal rule, Newton's method, Gaussian integration, etc. -- will fail quite badly in these highly oscillatory regions.</p>
 <p>Monte Carlo integration says: the area bounded by <span class="math">\(f(x)\)</span> on its graph is surely finite. It's just some fraction of the area of the rectangle of area <span class="math">\((b-a)\)</span> (where we assume that <span class="math">\(f\)</span> is taking values between 0 and 1, but any bounded function can be scaled to this). Well, so pick a random number <span class="math">\(x\)</span> on <span class="math">\(I\)</span>, and another random number <span class="math">\(y\)</span> on the range of <span class="math">\(f\)</span>. If <span class="math">\(f(x)&lt;y\)</span>, then we're below the curve. If not, we're above it. Repeat this process many times, keeping track of what fraction of the time we're below the curve, and what fraction we're above it. Since we know the area of the rectangle the whole thing happens in (this method obviously scales for any dimension), the fraction of hits below the curve multiplied by the total area we're allowing our points to range over is precisely our estimate for the integral.</p>
 <p>Here's a cute implementation (taken from Mark Newman's textbook) of this method for a pathological function:</p>
-<div class="highlight"><pre><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span>
 <span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">random</span>
 
 <span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -59,7 +59,7 @@ assessment of what you can and cannot do.</p>
 <span class="n">N</span> <span class="o">=</span> <span class="mi">10000</span>
 <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">random</span><span class="p">()</span>  <span class="c"># domain is [0, 2)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">random</span><span class="p">()</span>  <span class="c1"># domain is [0, 2)</span>
     <span class="n">y</span> <span class="o">=</span> <span class="n">random</span><span class="p">()</span>
     <span class="k">if</span> <span class="n">y</span><span class="o">&lt;</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
