@@ -33,7 +33,8 @@ telescope was way out of focus, so I brought it back in, and then BOOM.
 Big disk. 4 bright points around it. Three on the upper right, one to the
 bottom left. Disk has two easily resolved dark bands. (In the same plane,
 roughly, as the 4 moons).
-The 4 points: Io, Europa, Ganymede, Callisto.
+The 4 points: Io, Europa, Ganymede, Callisto. (Which is which? I'm not sure
+yet. It will require more observing).
 
 Europa looks like it's a bit inclined with respect to the plane of the other
 three (however this is a trick of forced perspective). 
