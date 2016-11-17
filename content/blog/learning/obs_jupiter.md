@@ -4,9 +4,12 @@ Date: 2016-11-17
 Tags: jupiter, planets, obs
 Summary: Looking at and seeing Jupiter, along with four of its moons.
 
-One component of the power of science's historic narrative is the claim that
-you can check it for yourself. Most people, myself included, simply have not
-or do not. We trust that other people indeed have done the things that they
+Scientists often make claims about what exists.
+A compelling and powerful argument for why this OK is that you can check
+their claims for yourself. 
+However, most people (myself included), often don't have the time, the 
+means, or the interest. 
+We trust that other people indeed have done the things that they
 claim. Indeed we rely on it, and have little reason to doubt them (cars work;
 computers work; telephones work).
 
