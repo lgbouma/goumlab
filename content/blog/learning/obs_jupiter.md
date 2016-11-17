@@ -1,4 +1,8 @@
-Thu 17 Nov 2016 06:27:21 AM EST
+Title: Seeing Jupiter
+Slug: seeing_jupiter
+Date: 2016-11-17
+Tags: jupiter, planets, obs
+Summary: Looking at and seeing Jupiter, along with four of its moons.
 
 One component of the power of science's historic narrative is the claim that
 you can check it for yourself. Most people, myself included, simply have not
@@ -43,4 +47,5 @@ Pictures below are with no filter, and with a bit of recoloring to remove glare.
 
 ![nofilter]({attach}/blog/images/jupiter_nofilter.png)  
 ![filter]({attach}/blog/images/jupiter_filter.png)  
+
 
