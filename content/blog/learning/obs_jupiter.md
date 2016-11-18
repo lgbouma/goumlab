@@ -50,8 +50,13 @@ better cameras, less blur.
 Pictures below are with no filter, and with a bit of recoloring to remove glare.
 The bands aren't visible, but the moons and planet are.
 
+2016/11/17 update:
+ID'd the moons, courtesy of [Mark Showalter's
+website](http://pds-rings.seti.org/tools/viewer2_jup.html).
+
 
 ![nofilter]({attach}/blog/images/jupiter_nofilter.png)  
+![moonID]({attach}/blog/images/moon_ID.png)
 ![filter]({attach}/blog/images/jupiter_filter.png)  
 
 
