@@ -1,0 +1,193 @@
+1. What images would you include aboard Voyager to represent humanity if the
+Voyager spacecraft were leaving today?
+
+2. What sounds/music?
+Frankie Knuckles, You Make Me Feel, full 9:14 cut.
+
+3. What information do you think should be included?
+Uh see #6 below. I think that there are certainly poetic uses to trying to
+communicate w/ something like Voyager, & it's a nice exercise for humans to
+think about what defines us, but it's pretty much a useless way to communicate
+over interstellar distances.
+
+4. Do you think life is rare or common in the universe?
+
+It's clearly happened at least once, and seems to have happened quick-ish
+(within hundreds of megayears after Earth was cool enough to support liquid
+water). Unfortunately this doesn't statistically mean that we can draw
+conclusions about whether or not life is generically "easy" or "hard" to get
+from typical conditions on a just-formed planet
+(http://www.pnas.org/content/109/2/395.full). Also, it apparently took a
+long-long time (like ~2Gyr) for life to go from single- to multi-cellular.
+
+There's not yet any predictive framework for understanding life's emergence.
+My impression is that some aspects of it are well understood -- e.g., how
+to get complex organic molecules from simple ones (see Miller-Urey expt).
+However much is still being discovered, e.g., how to get self-replicators 
+from complex organics (google Jeremy England's stat mech approach). There are
+many gaps remaining, and I don't know enough about this effort to identify 
+specifically where they are.
+
+While we have basically no idea how rare or common life is in the universe,
+the _awesome_ news of the past ~5 years is that we've learned how common rocky
+planets in habitable zones are. (I'm assuming you know what "habitable zone",
+equivalent to "goldilocks zone" in these discussions, means. More on how common 
+below). This is super important as a "next step" in working away at putting 
+actual numbers to the Drake equation.
+
+As you can read on wikipedia, this Eqn was focused on intelligent 
+civilizations releasing radio waves. Another approach to SETI is to look for 
+atmospheric biosignatures. On Earth, molecular oxygen composes ~20% of our 
+air because plants and photosynthetic bacteria put it there! It would otherwise
+react and disappear quickly. So if we manage to do one of these measurements of
+a neighboring exoplanet, we might have a strong reason to think that life is on
+it.
+
+Currently the best way to do this is by observing planets where we get a 
+chance alignment of the planetary system so that the planet passes in front 
+of the disk of the host star (a "transit"). We look at the spectrum of the 
+entire system (since we typically cannot resolve the planet), and during the 
+transit some of the star's light passes through the atmosphere of the planet, 
+and hits our telescope. This leave an imprint on the spectrum that we can 
+observe (in effect by seeing the apparent size of the transit signal grow & 
+shrink across the observed colors). For instance, in a "hot Jupiter" -- a 
+Jupiter-sized planet orbiting its star every couple of days -- this has led 
+to the detection of atomic sodium and potassium in their atmospheres. The 
+technique is called "transmission spectroscopy".
+
+So one reason to care about rocky habitable planets is because we stand at 
+least a chance of studying their atmospheres and detecting biosignatures. For 
+truly Earth-like planets this will not likely happen for at least a few decades.
+However there's a long (*long long*) shot that this might work in select
+cases with JWST (see
+http://www.space.com/22648-drake-equation-alien-life-seager.html).
+
+The point is that if we want a good empirical answer to this question of how 
+rare/common life is, we need to make a huge observational effort to study the 
+atmospheres of a large sample of Earth-like planets in habitable zones.
+This stands a much better chance of working than say, radio SETI, because it
+makes no assumptions concerning intelligence or technology, & instead only
+assumes that this life could source out-of-equilibrium atoms&molecules to the 
+atmospheres of other planets. (The downside: it's much harder).
+
+So the more pressing questions are:
+i) Where are the Earth-like planets? ii) How common are they? iii) How do we 
+build the telescope?
+
+Answer to i) is: probably orbiting main-sequence stars. Fortunately these are
+common and easy to detect and mostly have masses comparable-to or less-than our
+Sun. Since most stars are a good deal less luminous than our sun, which means that 
+their habitable zones are much closer to the stars. The possible effects on
+life are debated (google: M dwarf habitability, + Centauri Dreams blog, + the 
+recent proxima centauri discussion).
+It might be hard to make HZ planets orbiting M dwarfs habitable b/c i) stellar
+evolution indicates that they're cooked for the first ~billion years, possibly 
+evaporating off useful things like water ii) they're tidally locked to the star 
+(as the moon is to Earth) which makes for interesting but perhaps not
+impossible-for-life-developing weather. iii) Huge X-ray flux (M dwarf magnetic 
+fields are strong b/c of their fully convective interiors, which causes 
+processes to happen in their magnetospheres that emits the X-rays). Given how 
+X-rays mess with biology, this might be bad. Who knows.
+
+Answer to ii) depends on whether or not you think planets can be habitable
+around M dwarfs. If so, you're in luck because small rocky planets are more 
+common about M dwarfs than about sun-like stars. The specific numbers are 
+still being worked out, but Dressing & Charbonneau 2015 say something like 
+0.1-0.2 Earth sized planets per M dwarf habitable zone.
+
+What in my opinion is the most comprehensive paper on the topc is Burke+ 2015
+ApJ, who only looks at G & K dwarfs. He gets about 0.1, but you can look at his
+Figure 17 & see that as low as 0.01 "Earth-like" planets per G/K dwarf (in the
+right period and radius range) is reasonable.
+
+Let's rewrite the Drake eqn as follows:
+
+N: # of planets on which we could confirm (or put upper limits on the
+  abundances of) biosignatures within ~100 years.
+N_star: # of stars amenable to observation (likely requirements include being in
+  the Milky Way, perhaps within ~5kpc being optimistic, being not too active in 
+  terms of flares/activity, perhaps caveats about binaries being factors of 2).
+F_HZ: fraction of the observed stars that have "Earth-like HZ planets" (radii within 
+  say 20% of Earth's, periods the same).
+F_LIFE: fraction of Earth-like HZ planets on which life exists now
+F_BIOSIG: fraction of Earth-like HZ planets on which life develops on which we
+  could detect a biosignature gas.
+
+and
+
+N = N_star * F_HZ * F_LIFE * F_BIOSIG.
+
+(Note I'm neglecting the "lifetime of the civilization" by sucking it into
+F_LIFE)
+
+The MW has ~1e11 stars. Maybe 1/10 are ameanble to observation on the 100 yr
+timescale (this requires a big telescope, like bigger than LUVOIR. But 100
+years).
+
+F_HZ from Burke or Dressing is like 1/10 (1/100 if pessimistic, like 1/5 if
+optimistic).
+
+F_LIFE is a big unknown.
+
+F_BIOSIG, if we fund the right telescopes, and define "detect" to mean put some
+reasonable upper bound on the abundance of a given species that we think is a
+biosignature, might also be in the 1/10 to 1/100 range.
+
+Plugging in numbers, F_LIFE would have to be 1 in a million for this search to
+wind up with nothing. It might actually be that low. I don't know. However even 
+if it is, and we did this search, and came up with nothing, we get this
+interesting upper-bound on the fraction of Earth-like HZ planets (in the MW) that 
+have life now.
+
+If it were that rare, I think it'd be pretty interesting in its own right.
+
+Finally, for answer to iii) google "LUVOIR". They have a great website.
+
+
+5. If common, why the eerie silence? Why haven't we heard from anyone?
+
+* Space is big. Getting places is expensive (I mean this in terms of energy
+  cost, which to date doesn't have many plausible workarounds)
+
+* Technology (& intelligence) overlaps for a tiny fraction of species
+  timeframes. We started using stone tools ~5e6 years ago, hit behavioral
+  modernity ~5e4 yrs ago, and figured out radio ~100 yrs ago. Attempts at
+  modern radio-SETI have focused on radio communication. I'd argue that if in
+  the next 1000 years we found nothing better than radio to communicate over
+  interstellar distances, it'd be _more surprising_ than if we found something
+  that made radio communication attempts seem primitive.
+
+* Great filter. E.g., nuclear war -> nuclear winter; accidental black hole
+  creation; runaway viruses; solar flares (a la Carrington event); asteroids +
+  ensuant dust kickoff and associated greenhouse effect; gamma ray bursts;
+  major climate change cycles (consequences of many of the above); failed
+  geoengineering projects; unrestrained AI; runaway economic failures, ...
+
+* They're busy doing other things. Space travel & communication are expensive.
+  Talking over reasonable distances takes forever. Maybe they're funding big
+  telescopes to detect biosignatures b/c they realized it was more robust.
+
+See e.g., https://www.youtube.com/watch?v=7cidUaUCb5M.
+
+
+6. It has been said that if the Voyager spacecraft are ever intercepted,
+humanity will be a distant memory already. Do you think that's true? 
+
+Yes. Humanity development timelines are much much shorter than any realistic 
+estimate of the probability of Voyager spacecraft getting close enough to 
+anything interesting that might detect it. (Monitoring your local neighborhood 
+at the precision required to detect them is expensive. They won't reach the 
+star they're pointed at for many thousands of years. "Humanity" as we think of
+it today will almost certainly be much further along the genetic modification / 
+silicon-symbiosis by then).
+
+
+7. Do you think we're worthy of being contacted? 
+
+...
+
+8. Do you think humans, as a species, are fundamentally good? Or are we just
+out for our own best interests? 
+
+"Fundamentally good" neglects the context of "good & bad" being ideas that we
+made up. That said, IMO might as well keep doing interesting things.
